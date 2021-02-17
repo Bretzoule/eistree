@@ -87,8 +87,9 @@ html, body {
 }
 
 .menu input[type=text] {
-    padding: 12px 20px;
-    margin: 4px 0;
+    padding: 16px 20px;
+    margin: 6px 0;
+    width: 120%;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -152,8 +153,7 @@ ul>li {
 
 .searchbar {
     float: right;
-    cursor: pointer;
-    margin-top: 16px;
+    cursor:text;
   }
   
 .slides {
@@ -232,7 +232,7 @@ footer {
 
 #footer .content section {
     width: 25%;
-    border-left : 3px solid rgba(0, 0, 0, 0.233);
+    border-left : 2px solid rgba(0, 0, 0, 0.233);
 }
 
 #footer .content section:first-child {
