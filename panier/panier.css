@@ -191,27 +191,20 @@ li.dropdown {
     display: table;
   }
   
-  .group:after, .shopping-cart:after, .column-labels:after, .product:after, .totals-item:after {
+ .shopping-cart:after, .column-labels:after, .product:after, .totals-item:after {
     clear: both;
   }
   
-  .group, .shopping-cart, .column-labels, .product, .totals-item {
-    zoom: 1;
-  }
-  
-  /* Apply clearfix in a few places */
-  /* Apply dollar signs */
+  /* symbole euro */
   .product .product-price:after, .product .product-line-price:after, .totals-value:after {
     content: '€';
   }
   
-  /* Body/Header stuff */
-
   .shopping-cart {
     margin-top: -45px;
   }
   
-  /* Column headers */
+  /* tete de colonne */
   .column-labels label {
     padding-bottom: 15px;
     margin-bottom: 15px;
@@ -221,7 +214,7 @@ li.dropdown {
     text-indent: -9999px;
   }
   
-  /* Product entries */
+  /* entrées produit */
   .product {
     margin-bottom: 20px;
     padding-bottom: 10px;
@@ -257,7 +250,7 @@ li.dropdown {
     background-color: #a44;
   }
   
-  /* Totals section */
+  /* section totaux */
 
   .totals .totals-item {
     float: right;
