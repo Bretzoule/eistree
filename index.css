@@ -207,6 +207,7 @@ ul>li {
     border-radius: 4px;
     position: absolute;
     left: 0;
+    display: block;
     right: 0;
     cursor: pointer;
     transition: transform 0.4s ease;
@@ -270,6 +271,26 @@ ul>li {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+#slides>a {
+    margin: 0px auto;
+    width: 300px;
+    display: block;
+}
+
+.addressInLabel {
+    height: 80%;
+    margin: 8% 10% 10% 10%;
+    text-align: left;
+}
+
+.addressInLabel a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:50%;
+    text-indent: -9999px;   /* encore le trix pour cacher le texte */
 }
 
 /* Recherche */
@@ -509,7 +530,6 @@ header>.navbar {
     flex-direction: column;
     background-color: #F8F8F4;
     margin: 50px;
-    
 }
 
 .description {
