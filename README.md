@@ -14,6 +14,13 @@ Cette startup créée par des français fait de la qualité sa priorité.
 Il est indispensable de lancer le site avec un live server ou de créer un virtual host à l'aide d'Apache pour profiter de toutes les fonctionnalités du site
 
 
+## Depuis quelles plateformes peut-on accéder au site ?
+
+Depuis n'importe quelle plateforme (ou presque). 
+
+Le site est conçu pour être accessible depuis ordinateur, smartphone ou encore tablette.
+
+
 ### Que trouve-t-on sur le site ?
 
 Depuis l'accueil, il est possible d'accéder aux listes des produits de nos 3 catégories phares : Les plantes d'intérieur, les fleurs ainsi que les arbres.
