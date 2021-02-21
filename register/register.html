@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/register/register.css">
     <title>EISTree - Le spécialiste des plantes.</title>
 </head>
 
@@ -18,14 +18,14 @@
     </header>
     <nav class="menu">
         <ul>
-            <li><a class="active" href="/index.html">Accueil</a></li>
+            <li><a href="/index.html">Accueil</a></li>
             <li class="dropdown"><a class="dropdownbtn" href="/listesproduits/listeproduits.html">Nos Produits</a>
                 <div class="dropdown-content">
                     <a href="/listesproduits/arbustes.html">Arbustes &#x1F333;</a>
                     <a href="/listesproduits/plantesfleuries.html">Plantes fleuries &#x1F33A;</a>
                     <a href="/listesproduits/plantesinterieur.html">Plantes d'intérieur &#x1F335;</a>
             </li>
-            <li><a href="/login/login.html">Mon Compte</a></li>
+            <li><a class="active" href="#">Mon Compte</a></li>
             <li><a href="/contact/contact.html">Contact</a></li>
             <li id="panier"><a href="/panier/panier.html">Panier</a></li>
             <li class="formulaireee">
@@ -40,19 +40,37 @@
     </nav>
     <div id="page">
         <div id="centerPanel">
-            <p id="mainTitle"><b>Adopt a Tree, be happy. &#127811;</b></p>
-            <section id="slider">
-                <input type="radio" name="slider" id="s1" checked>
-                <input type="radio" name="slider" id="s2">
-                <input type="radio" name="slider" id="s3">
-                <input type="radio" name="slider" id="s4">
-                <input type="radio" name="slider" id="s5">
-                <label for="s1" id="slide1"><img src="" alt=""></label>
-                <label for="s2" id="slide2"></label>
-                <label for="s3" id="slide3"></label>
-                <label for="s4" id="slide4"></label>
-                <label for="s5" id="slide5"></label>
-              </section>
+            <p id="mainTitle"><b>M'enregistrer &#127811;</b></p>
+            <div id="fullPanel">
+                <div class="inputPanel">
+                    <form accept-charset="UTF-8" action="#" method="post">
+                        <p  class="petitTitreSection">Mes informations personnelles :</p>
+                        <input name="nom" type="text" pattern="[^\s\x3B]+" value="" placeholder="Nom" required /><br>
+
+                        <input name="prenom" type="text" pattern="[^\s\x3B]+" value="" placeholder="Prénom" required /><br>
+
+                        <input name="adresse" type="text" pattern="[^\s\x3B]+" value="" placeholder="Adresse Postale" required /><br>
+
+                        <input name="codepostal" type="text" pattern="[^\s\x3B]+" value="" placeholder="Code Postal" required /><br>
+
+                        <input name="" type="text" pattern="[^\s\x3B]+" value="" placeholder="Ville" required /><br>
+                </div>
+
+                <div class="inputPanelFinal">
+                    <p class="petitTitreSection">Mes informations de connexion :</p>
+                    <input name="pseudo" type="text" pattern="[^\s\x3B]+" value="" placeholder="Email"
+                        oninvalid='setCustomValidity("Champ obligatoire - Merci de ne pas utiliser \"espace\"")'
+                        oninput="setCustomValidity('')" required />
+                    <input name="password" type="password" pattern="[^\s\x3B]+" value="" placeholder="Mot de passe"
+                        oninvalid='setCustomValidity("Champ obligatoire - Merci de ne pas utiliser \"espace\"")'
+                        oninput="setCustomValidity('')" required />
+                        <input name="confirmpassword" type="password" pattern="[^\s\x3B]+" value="" placeholder="Confirmez le mot de passe"
+                        oninvalid='setCustomValidity("Champ obligatoire - Merci de ne pas utiliser \"espace\"")'
+                        oninput="setCustomValidity('')" required /><br>
+                    <a href="#"><input type="button" value="Créer mon compte"></input></a>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <footer id="footerinner">
@@ -62,8 +80,7 @@
                 <p>EISTree est une boutique spécialisée dans la vente en ligne de plantes, arbres et autres entitées
                     botaniques. Cette startup 100% Française privilégie la qualité en faisant affaire avec des
                     producteurs locaux.
-                    Achetez un EISTree c'est acheter une plante issue de l'amour d'une équipe de developpeurs, de
-                    doux
+                    Achetez un EISTree c'est acheter une plante issue de l'amour d'une équipe de developpeurs, de doux
                     commerciaux et d'adorables producteurs <span class="clear">❤️</span> !</p>
                 <p class="footer-icons">
                     <a href="mailto:contact@eistree.fr">&#x1F4E7;</a>

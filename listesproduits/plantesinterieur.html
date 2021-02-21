@@ -12,20 +12,21 @@
 
 <body>
     <header id="mainheader">
-        <a href="index.html"><img id="logoTopDroit" src="/assets/textlogo.png" alt="fleur"></a>
+        <a href="/index.html"><img id="logoTopDroit" src="/assets/textlogo.png" alt="fleur"></a>
     </header>
     <nav class="menu">
         <ul>
-            <li><a class="active" href="">Accueil</a></li>
-            <li class="dropdown"><a class="dropdownbtn" href="">Nos Produits</a>
+            <li><a href="">Accueil</a></li>
+            <li class="dropdown"><a class="active" class="dropdownbtn" href="/listesproduits/listeproduits.html">Nos
+                    Produits</a>
                 <div class="dropdown-content">
                     <a href="/listesproduits/arbustes.html">Arbustes &#x1F333;</a>
                     <a href="/listesproduits/plantesfleuries.html">Plantes fleuries &#x1F33A;</a>
                     <a href="/listesproduits/plantesinterieur.html">Plantes d'intérieur &#x1F335;</a>
             </li>
-            <li><a href="">À propos</a></li>
-            <li><a href="">Contact</a></li>
-            <li id="panier"><a href="">Panier</a></li>
+            <li><a href="/login/login.html">Mon Compte</a></li>
+            <li><a href="/contact/contact.html">Contact</a></li>
+            <li id="panier"><a href="/panier/panier.html">Panier</a></li>
             <li class="formulaireee">
                 <form action="" method="get"><input class="searchbar" name="recherche" type="text" value="" onkeyup=""
                         placeholder="(Recherche.....)" />
@@ -36,40 +37,44 @@
             </li>
         </ul>
     </nav>
-
-    <div class="page">
-        <div class="centerPanel">
+    <div id="page">
+        <div id="centerPanel">
             <section class="products">
                 <div class="product-card">
-                    <div class="product-image">
-                        <img src="/images/chamaedorea.jpg">
-                    </div>
-                    <div class="product-info">
-                        <p>Chamaedorea Elegantis</p>
-                        <p>8.00€</p>
-                    </div>
+                    <a href="#">
+                        <div class="product-image">
+                            <img src="/images/chamaedorea.jpg">
+                        </div>
+                        <div class="product-info">
+                            <p>Chamaedorea Elegantis</p>
+                            <p>8.00€</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="product-card">
-                    <div class="product-image">
-                        <img src="/images/monstera.jpg">
-                    </div>
-                    <div class="product-info">
-                        <p>Monstera Deliciosa</p>
-                        <p>12.00€</p>
-                    </div>
+                    <a href="#">
+                        <div class="product-image">
+                            <img src="/images/monstera.jpg">
+                        </div>
+                        <div class="product-info">
+                            <p>Monstera Deliciosa</p>
+                            <p>12.00€</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="product-card">
-                    <div class="product-image">
-                        <img src="/images/pothos.jpg">
-                    </div>
-                    <div class="product-info">
-                        <p>Scindapsus Aureus</p>
-                        <p>10.00€</p>
-                    </div>
+                    <a href="#">
+                        <div class="product-image">
+                            <img src="/images/pothos.jpg">
+                        </div>
+                        <div class="product-info">
+                            <p>Scindapsus Aureus</p>
+                            <p>10.00€</p>
+                        </div>
+                    </a>
                 </div>
-
             </section>
         </div>
     </div>
@@ -96,13 +101,13 @@
                 <div class="innerblockright">
                     <h3>Liens utiles :</h3>
                     <p class="footer-links">
-                        <a href="#">Accueil</a>
+                        <a href="/index.html">Accueil</a>
                         |
                         <a href="#">Les conseils de Céline</a>
                         |
-                        <a href="#">Plan du site</a>
+                        <a href="/sitemap/sitemap.html">Plan du site</a>
                         |
-                        <a href="#">Contact</a>
+                        <a href="/contact/contact.html">Contact</a>
                     </p>
                 </div>
             </div>
