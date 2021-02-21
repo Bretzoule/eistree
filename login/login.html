@@ -6,8 +6,10 @@
     <link rel="shortcut icon" href="/assets/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/index.css">
-    <title>EISTree - Recherche : Plantes d'intérieur</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/login/login.css">
+    <title>EISTree - Connexion</title>
 </head>
 
 <body>
@@ -17,15 +19,14 @@
     <nav class="menu">
         <ul>
             <li><a href="/index.html">Accueil</a></li>
-            <li class="dropdown"><a class="active" class="dropdownbtn" href="/listesproduits/listeproduits.html">Nos
-                    Produits</a>
+            <li class="dropdown"><a class="dropdownbtn" href="/listesproduits/listeproduits.html">Nos Produits</a>
                 <div class="dropdown-content">
                     <a href="/listesproduits/arbustes.html">Arbustes &#x1F333;</a>
                     <a href="/listesproduits/plantesfleuries.html">Plantes fleuries &#x1F33A;</a>
                     <a href="/listesproduits/plantesinterieur.html">Plantes d'intérieur &#x1F335;</a>
                 </div>
             </li>
-            <li><a href="/login/login.html">Mon Compte</a></li>
+            <li><a class="active" href="#">Mon Compte</a></li>
             <li><a href="/contact/contact.html">Contact</a></li>
             <li id="panier"><a href="/panier/panier.html">Panier</a></li>
             <li class="formulaireee">
@@ -38,46 +39,17 @@
     </nav>
     <div id="page">
         <div id="centerPanel">
-            <section class="products">
-                <div class="product-card">
-                    <a href="#">
-                        <div class="product-image">
-                            <img src="/images/chamaedorea.jpg">
-                        </div>
-                        <div class="product-info">
-                            <p>Chamaedorea Elegantis</p>
-                            <p>8.00€</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="product-card">
-                    <a href="/fichesproduits/monstera.html">
-                        <div class="product-image">
-                            <img src="/images/monstera.jpg">
-                        </div>
-                        <div class="product-info">
-                            <p>Monstera Deliciosa</p>
-                            <p>12.00€</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="product-card">
-                    <a href="#">
-                        <div class="product-image">
-                            <img src="/images/pothos.jpg">
-                        </div>
-                        <div class="product-info">
-                            <p>Scindapsus Aureus</p>
-                            <p>10.00€</p>
-                        </div>
-                    </a>
-                </div>
-            </section>
+            <p id="mainTitle"><b>Mon compte &#127811;</b></p>
+            <div id="bloc_Login">
+                <form accept-charset="UTF-8" action="#" method="post">
+                    <input name="email" type="text" pattern="[^\s\x3B]+" value="" placeholder="Email" oninvalid='setCustomValidity("Champ obligatoire - Merci de ne pas utiliser \"espace\" et ; ")' oninput="setCustomValidity('')" required /><br>
+                    <input name="password" type="password" pattern="[^\s\x3B]+" value="" placeholder="Mot de passe" oninvalid='setCustomValidity("Champ obligatoire - Merci de ne pas utiliser \"espace\" et ; ")' oninput="setCustomValidity('')" required /><br>
+                    <input type="submit" value="Se connecter"></input> <br>
+                    <a href="/register/register.html"><input type="button" value="Créer mon compte"></input></a>
+                </form>
+              </div>
         </div>
     </div>
-
     <footer id="footerinner">
         <div id="footerwrapper">
             <div class="footer-left">
@@ -110,14 +82,13 @@
                     </p>
                 </div>
             </div>
-        </div> 
+        </div>
         <div class="copyright">
             <img src="/assets/footerlogo.png">
             <br>
             &copy; EISTree - Tout droits réservés.
         </div>
     </footer>
-
 </body>
 
 </html>

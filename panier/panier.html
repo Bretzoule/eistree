@@ -9,32 +9,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/panier/panier.css">
-    <title>EISTree - Le spécialiste des plantes.</title>
+    <title>EISTree - Panier</title>
 </head>
 
 <body>
     <header id="mainheader">
-        <img id="logoTopDroit" src="/assets/textlogo.png" alt="fleur">
+        <a href="/index.html"><img id="logoTopDroit" src="/assets/textlogo.png" alt="fleur"></a>
     </header>
     <nav class="menu">
         <ul>
             <li><a href="/index.html">Accueil</a></li>
-            <li class="dropdown"><a class="dropdownbtn" href="">Nos Produits</a>
+            <li class="dropdown"><a class="dropdownbtn" href="/listesproduits/listeproduits.html">Nos Produits</a>
                 <div class="dropdown-content">
-                    <a href="#">Arbres Fruitiers &#x1F333;</a>
-                    <a href="#">Fleurs &#x1F33A;</a>
-                    <a href="#">Plantes d'Intérieur &#x1F335;</a>
+                    <a href="/listesproduits/arbustes.html">Arbres Fruitiers &#x1F333;</a>
+                    <a href="/listesproduits/plantesfleuries.html">Fleurs &#x1F33A;</a>
+                    <a href="/listesproduits/plantesinterieur.html">Plantes d'Intérieur &#x1F335;</a>
+                </div>
             </li>
-            <li><a href="">À propos</a></li>
-            <li><a href="">Contact</a></li>
-            <li id="panier"><a class="active">Panier</a></li>
+            <li><a href="/login/login.html">Mon Compte</a></li>
+            <li><a href="/contact/contact.html">Contact</a></li>
+            <li id="panier"><a class="active" href="#">Panier</a></li>
             <li class="formulaireee">
                 <form action="" method="get"><input class="searchbar" name="recherche" type="text" value="" onkeyup=""
                         placeholder="(Recherche.....)" />
                     <div id="resultats"></div>
                 </form>
-                </div>
-                </div>
             </li>
         </ul>
     </nav>
@@ -42,14 +41,13 @@
         <div id="mainpage">
             <div class="shopping-cart">
                 <div class="column-labels">
-                    <label class="product-image"></label>
-                    <label class="product-details"></label>
+                    <label class="product-image"> </label>
+                    <label class="product-details"> </label>
                     <label class="product-price">Prix</label>
                     <label class="product-quantity">Quantité</label>
                     <label class="product-removal"></label>
                     <label class="product-line-price">Total</label>
                 </div>
-
                 <div class="product">
                     <div class="product-image">
                         <img src="/images/erable.jpg">
@@ -64,7 +62,7 @@
                     </div>
                     <div class="product-removal">
                         <button class="remove-product">
-                            Retirer
+                            Supprimer
                         </button>
                     </div>
                     <div class="product-line-price">480,00</div>
@@ -84,7 +82,7 @@
                     </div>
                     <div class="product-removal">
                         <button class="remove-product">
-                            Retirer
+                            Supprimer
                         </button>
                     </div>
                     <div class="product-line-price">28,00</div>
@@ -96,20 +94,20 @@
                         <div class="totals-value" id="cart-subtotal">508,00</div>
                     </div>
                     <div class="totals-item">
-                        <label>Taxe (5%)</label>
-                        <div class="totals-value" id="cart-tax">25.4</div>
+                        <label>TVA (5%)</label>
+                        <div class="totals-value" id="cart-tva">25,40</div>
                     </div>
                     <div class="totals-item">
-                        <label>Frais de Ports</label>
-                        <div class="totals-value" id="cart-shipping">15</div>
+                        <label>Frais de port</label>
+                        <div class="totals-value" id="cart-shipping">15,00</div>
                     </div>
                     <div class="totals-item totals-item-total">
                         <label>Total Final</label>
-                        <div class="totals-value" id="cart-total">OUAIS</div>
+                        <div class="totals-value" id="cart-total">548,40</div>
                     </div>
                 </div>
 
-                <button class="checkout">Paiement !</button>
+                <button class="checkout">Paiement</button>
             </div>
         </div>
     </div>
@@ -137,17 +135,16 @@
                 <div class="innerblockright">
                     <h3>Liens utiles :</h3>
                     <p class="footer-links">
-                        <a href="#">Accueil</a>
+                        <a href="/index.html">Accueil</a>
                         |
                         <a href="#">Les conseils de Céline</a>
                         |
-                        <a href="#">Plan du site</a>
+                        <a href="/sitemap/sitemap.html">Plan du site</a>
                         |
-                        <a href="#">Contact</a>
+                        <a href="/contact/contact.html">Contact</a>
                     </p>
                 </div>
             </div>
-        </div>
         </div>
         <div class="copyright">
             <img src="/assets/footerlogo.png">

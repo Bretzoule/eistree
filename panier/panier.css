@@ -211,7 +211,7 @@ li.dropdown {
     border-bottom: 1px solid #eee;
   }
   .column-labels .product-image, .column-labels .product-details, .column-labels .product-removal {
-    text-indent: -9999px;
+    text-indent: -9999px; /* petite astuce pour conserver la taille du bloc en fonction de la taille du texte mais sans faire apparaître le texte */
   }
   
   /* entrées produit */
@@ -366,7 +366,7 @@ footer {
     justify-content: flex-end;
 }
 
-/* responsiveness en largeur */
+/* responsiveness en hauteur */
 
 @media (max-height:800px) {
     footer {
@@ -471,7 +471,7 @@ footer {
 
 /* responsiveness */
 
-@media (max-width: 880px) {
+@media (max-width: 1258px) {
     #footerwrapper {
         flex-direction: column;
     }
@@ -481,6 +481,7 @@ footer {
     }
     .footer-left {
         padding-left: 0;
+        padding-right: 0;
     }
     .innerblockright {
         padding: 0;
