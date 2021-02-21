@@ -44,17 +44,16 @@
                 <div class="inputPanel">
                     <form accept-charset="UTF-8" action="#" method="post">
                         <p  class="petitTitreSection">Mes informations personnelles :</p>
-                        <input name="nom" type="text" pattern="[^\s\x3B]+" value="" placeholder="Nom" required /><br>
+                        <input name="nom" type="text"  value="" placeholder="Nom" required /><br>
 
-                        <input name="prenom" type="text" pattern="[^\s\x3B]+" value="" placeholder="Prénom" required /><br>
+                        <input name="prenom" type="text" value="" placeholder="Prénom" required /><br>
 
-                        <input name="adresse" type="text" pattern="[^\s\x3B]+" value="" placeholder="Adresse Postale" required /><br>
+                        <input name="adresse" type="text" value="" placeholder="Adresse Postale" required /><br>
 
                         <input name="codepostal" type="text" pattern="[^\s\x3B]+" value="" placeholder="Code Postal" required /><br>
 
-                        <input name="" type="text" pattern="[^\s\x3B]+" value="" placeholder="Ville" required /><br>
+                        <input name="" type="text" value="" placeholder="Ville" required /><br>
                 </div>
-
                 <div class="inputPanelFinal">
                     <p class="petitTitreSection">Mes informations de connexion :</p>
                     <input name="pseudo" type="text" pattern="[^\s\x3B]+" value="" placeholder="Email"
@@ -66,7 +65,7 @@
                         <input name="confirmpassword" type="password" pattern="[^\s\x3B]+" value="" placeholder="Confirmez le mot de passe"
                         oninvalid='setCustomValidity("Champ obligatoire - Merci de ne pas utiliser \"espace\"")'
                         oninput="setCustomValidity('')" required /><br>
-                    <a href="#"><input type="button" value="Créer mon compte"></input></a>
+                    <a href="#"><input type="submit" value="Créer mon compte"></input></a>
                     </form>
                 </div>
             </div>

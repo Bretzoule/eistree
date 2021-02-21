@@ -433,6 +433,10 @@ header>.navbar {
     display: inherit;
 }
 
+textarea {
+    margin-right: 50px;
+}
+
 
 /* responsiveness */
 @media (max-height:800px) {
@@ -467,5 +471,8 @@ header>.navbar {
         }
     .contactPart {
         width: 100%;
+    }
+    textarea {
+        margin-right: 0px;
     }
 }
