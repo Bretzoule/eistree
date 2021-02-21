@@ -17,5 +17,8 @@ Il est indispensable de lancer le site avec un live server ou de créer un virtu
 ### Que trouve-t-on sur le site ?
 
 Depuis l'accueil, il est possible d'accéder aux listes des produits de nos 3 catégories phares : Les plantes d'intérieur, les fleurs ainsi que les arbres.
+
 Une fois dans cette liste, seule la page produit de la Monstera (accessible depuis les plantes d'intérieur) mène à une page produit car les autres pages seront réalisées ultérieurement, à l'aide d'outils supplémentaires.
-Il y a également une page permettant d'accéder à son compte, une page de contact, une barre de recherche ainsi qu'un panier. Cependant, ces 4 fonctionnalités ne sont pas opérationnelles pour l'instant pour les raisons citées précédemment.
+
+
+On y trouve également une page permettant d'accéder à son compte, une page de contact, une barre de recherche ainsi qu'un panier. Cependant, ces 4 fonctionnalités ne sont pas opérationnelles pour l'instant pour les raisons citées précédemment.
