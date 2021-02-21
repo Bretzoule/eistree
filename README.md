@@ -30,4 +30,4 @@ Sur la page d'accueil se trouve également un carrousel dont les liens, qui à t
 Une fois dans cette liste, seule la page produit de la Monstera (accessible depuis les plantes d'intérieur) mène à une page produit car les autres pages seront réalisées ultérieurement, à l'aide d'outils supplémentaires.
 
 
-On y trouve aussi une page permettant d'accéder à son compte, une page de contact, une barre de recherche ainsi qu'un panier. Cependant, ces 4 fonctionnalités ne sont pas opérationnelles pour l'instant pour les raisons citées précédemment.
+On y trouve de plus une page permettant d'accéder à son compte, une page de contact, une barre de recherche ainsi qu'un panier. Cependant, ces 4 fonctionnalités ne sont pas opérationnelles pour l'instant pour les raisons citées précédemment.
