@@ -177,6 +177,7 @@ input[type=button], input[type=submit], input[type=reset] {
     margin-top: 5px;
     text-decoration: none;
     cursor: pointer;
+    width: 232px;
   }
   input[type=submit]:hover, input[type=button]:hover {
     background-color: #6694B9;
@@ -189,6 +190,7 @@ input[type=button], input[type=submit], input[type=reset] {
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
+    width: 200px;
   }
 
 #mainTitle {
@@ -273,7 +275,7 @@ footer {
     justify-content: flex-end;
 }
 
-/* responsiveness en largeur */
+/* responsiveness en hauteur */
 
 @media (max-height:800px) {
     footer {
@@ -351,6 +353,7 @@ footer {
 .footer-links {
     color: #ffffff;
     margin: 20px 0 12px;
+    overflow: hidden;
 }
 
 .footer-links a {
@@ -376,25 +379,6 @@ footer {
     width: 5%;
 }
 
-/* responsiveness */
-
-@media (max-width: 880px) {
-    #footerwrapper {
-        flex-direction: column;
-    }
-    .footer-left, .footer-center, .footer-right {
-        width: 100%;
-        text-align: center;
-    }
-    .footer-left {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .innerblockright {
-        padding: 0;
-    }
-}
-
 /* Divers */
 
 header>.navbar {
@@ -413,4 +397,75 @@ header>.navbar {
 
 .copyright>img {
     width: 96px;
+}
+
+/* Contact */
+
+.forceLeft {
+    align-self: flex-start;
+}
+
+#bloc_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin-bottom: 30px;
+    padding: 15px;   
+    border-radius: 30px;
+    box-shadow: 0px 10px 25px 0px gray;
+}
+
+.contactPart {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactPart > p {
+    margin-top:10px;
+}
+
+#formulaireContact {
+    display: inherit;
+}
+
+
+/* responsiveness */
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+}
+
+@media (max-width: 1258px) {
+    #footerwrapper {
+        flex-direction: column;
+    }
+    .footer-left, .footer-center, .footer-right {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-left {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .innerblockright {
+        padding: 0;
+    }
+}
+
+
+@media (max-width:650px) {
+    #formulaireContact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    .contactPart {
+        width: 100%;
+    }
 }
