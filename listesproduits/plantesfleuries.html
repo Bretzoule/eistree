@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/index.css">
+    <script src="listesproduits.js"></script>
     <title>EISTree - Recherche : Plantes fleuries</title>
 </head>
 
@@ -39,6 +40,24 @@
     </nav>
 
     <div id="page">
+        <div class="sideBlock1">
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <div class="Filtres">
+                    <h2>Filtres :</h2>
+                    <div class="filtreSubItem">
+                        <div class="nomitem">Stocks</div>
+                        <label onlick="changeVisibility()" class="switch">
+                            <input id="stocksCheckbox" onclick='changeVisibility()' type="checkbox">
+                            <span class="btnSlide round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='fondsidepanel'>
+            <button class="openbtn" onclick="openNav()">☰</button>
+        </div>
         <div id="centerPanel">
             <section class="products">
                 <div class="product-card">
@@ -49,6 +68,7 @@
                         <div class="product-info">
                             <p>Hibiscus Syriacus</p>
                             <p>40.00€</p>
+                            <p class="stock">Stock : 100</p>
                         </div>
                     </a>
                 </div>
@@ -61,6 +81,7 @@
                         <div class="product-info">
                             <p>Strelitizia Reginae</p>
                             <p>35.00€</p>
+                            <p class="stock">Stock : 100</p>
                         </div>
                     </a>
                 </div>
@@ -73,6 +94,7 @@
                         <div class="product-info">
                             <p>Bougainvillea Glabra</p>
                             <p>28.00€</p>
+                            <p class="stock">Stock : 100</p>
                         </div>
                     </a>
                 </div>

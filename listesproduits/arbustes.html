@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/index.css">
     <title>EISTree - Recherche : Arbustes</title>
+    <script src="listesproduits.js"></script>
 </head>
 
 <body>
@@ -39,6 +40,24 @@
 
 
     <div id="page">
+        <div class="sideBlock1">
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <div class="Filtres">
+                    <h2>Filtres :</h2>
+                    <div class="filtreSubItem">
+                        <div class="nomitem">Stocks</div>
+                        <label onlick="changeVisibility()" class="switch">
+                            <input id="stocksCheckbox" onclick='changeVisibility()' type="checkbox">
+                            <span class="btnSlide round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class ='fondsidepanel' >
+            <button class="openbtn" onclick="openNav()">☰</button>
+        </div>
         <div id="centerPanel">
             <section class="products">
                 <div class="product-card">
@@ -49,6 +68,7 @@
                         <div class="product-info">
                             <p>Acer Japonicum</p>
                             <p>240.00€</p>
+                            <p class="stock">Stock : 100</p>
                         </div>
                     </a>
                 </div>
@@ -61,6 +81,7 @@
                         <div class="product-info">
                             <p>Citrus Limon</p>
                             <p>60.00€</p>
+                            <p class="stock">Stock : 100</p>
                         </div>
                     </a>
                 </div>
@@ -73,6 +94,7 @@
                         <div class="product-info">
                             <p>Callistemon Citrinus</p>
                             <p>40.00€</p>
+                            <p class="stock">Stock : 100</p>
                         </div>
                     </a>
                 </div>

@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/index.css">
+    <script src="listesproduits.js"></script>
     <title>EISTree - Recherche : Plantes d'intérieur</title>
 </head>
 
@@ -37,6 +38,24 @@
         </ul>
     </nav>
     <div id="page">
+        <div class="sideBlock1">
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <div class="Filtres">
+                    <h2>Filtres :</h2>
+                    <div class="filtreSubItem">
+                        <div class="nomitem">Stocks</div>
+                        <label onlick="changeVisibility()" class="switch">
+                            <input id="stocksCheckbox" onclick='changeVisibility()' type="checkbox">
+                            <span class="btnSlide round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class ='fondsidepanel' >
+            <button class="openbtn" onclick="openNav()">☰</button>
+        </div>
         <div id="centerPanel">
             <section class="products">
                 <div class="product-card">
@@ -47,6 +66,7 @@
                         <div class="product-info">
                             <p>Chamaedorea Elegantis</p>
                             <p>8.00€</p>
+                            <p class="stock">Stock : 100</p>
                         </div>
                     </a>
                 </div>
@@ -59,6 +79,7 @@
                         <div class="product-info">
                             <p>Monstera Deliciosa</p>
                             <p>12.00€</p>
+                            <p class="stock">Stock : 100</p>
                         </div>
                     </a>
                 </div>
@@ -71,6 +92,7 @@
                         <div class="product-info">
                             <p>Scindapsus Aureus</p>
                             <p>10.00€</p>
+                            <p class="stock">Stock : 100</p>
                         </div>
                     </a>
                 </div>
