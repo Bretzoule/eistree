@@ -90,13 +90,13 @@ html, body {
     float: right;
 }
 
-/* dropdown menu */
+/* mydropdown menu */
 
-li.dropdown {
+li.mydropdown {
     display: inline-block;
 }
 
-.dropdown-content {
+.mydropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -105,7 +105,7 @@ li.dropdown {
     z-index: 1;
 }
 
-.dropdown-content a {
+.mydropdown-content a {
     color: black;
     padding: 12px 10px;
     text-decoration: none;
@@ -114,11 +114,11 @@ li.dropdown {
     border-bottom: 6px solid #f9f9f9;
 }
 
-.dropdown-content a:hover {
+.mydropdown-content a:hover {
     border-bottom: 6px solid #3a595a;
 }
 
-.dropdown:hover .dropdown-content {
+.mydropdown:hover .mydropdown-content {
     display: block;
 }
 
