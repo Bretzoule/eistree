@@ -26,7 +26,7 @@ html, body {
 }
 
 .menu {
-    z-index: 1;
+    z-index: 3;
     position: sticky;
     top: 0;
     -webkit-box-shadow: 0 8px 6px -6px black;
@@ -90,13 +90,13 @@ html, body {
     float: right;
 }
 
-/* dropdown menu */
+/* mydropdown menu */
 
-li.dropdown {
+li.mydropdown {
     display: inline-block;
 }
 
-.dropdown-content {
+.mydropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -105,7 +105,7 @@ li.dropdown {
     z-index: 1;
 }
 
-.dropdown-content a {
+.mydropdown-content a {
     color: black;
     padding: 12px 10px;
     text-decoration: none;
@@ -114,11 +114,11 @@ li.dropdown {
     border-bottom: 6px solid #f9f9f9;
 }
 
-.dropdown-content a:hover {
+.mydropdown-content a:hover {
     border-bottom: 6px solid #3a595a;
 }
 
-.dropdown:hover .dropdown-content {
+.mydropdown:hover .mydropdown-content {
     display: block;
 }
 
@@ -149,145 +149,11 @@ li.dropdown {
 
 /* Panier */
 
-.product-image {
-    float: left;
-    width: 20%;
-  }
-  
-  .product-details {
-    float: left;
-    width: 37%;
-  }
-  
-  .product-price {
-    float: left;
-    width: 12%;
-  }
-  
-  .product-quantity {
-    float: left;
-    width: 10%;
-  }
-  
-  .product-removal {
-    float: left;
-    width: 9%;
-  }
-  
-  .product-line-price {
-    float: left;
-    width: 12%;
-    text-align: right;
-  }
-  
-  /* clearfix cf stackoverflow */
-  .group:before, .shopping-cart:before, .column-labels:before, .product:before, .totals-item:before,
-  .group:after,
-  .shopping-cart:after,
-  .column-labels:after,
-  .product:after,
-  .totals-item:after {
-    content: '';
-    display: table;
-  }
-  
- .shopping-cart:after, .column-labels:after, .product:after, .totals-item:after {
-    clear: both;
-  }
-  
-  /* symbole euro */
-  .product .product-price:after, .product .product-line-price:after, .totals-value:after {
-    content: '€';
-  }
-  
-  .shopping-cart {
-    margin-top: -45px;
-  }
-  
-  /* tete de colonne */
-  .column-labels label {
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #eee;
-  }
-  .column-labels .product-image, .column-labels .product-details, .column-labels .product-removal {
-    text-indent: -9999px; /* petite astuce pour conserver la taille du bloc en fonction de la taille du texte mais sans faire apparaître le texte */
-  }
-  
-  /* entrées produit */
-  .product {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
-  }
-  .product .product-image {
-    text-align: center;
-  }
-  .product .product-image img {
-    width: 100px;
-  }
-  .product .product-details .product-title {
-    margin-right: 20px;
-    font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
-  }
-  .product .product-details .product-description {
-    margin: 5px 20px 5px 0;
-    line-height: 1.4em;
-  }
-  .product .product-quantity input {
-    width: 40px;
-  }
-  .product .remove-product {
-    border: 0;
-    padding: 4px 8px;
-    background-color: #c66;
-    color: #fff;
-    font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
-    font-size: 12px;
-    border-radius: 3px;
-  }
-  .product .remove-product:hover {
-    background-color: #a44;
-  }
-  
-  /* section totaux */
+.littleInput {
+    max-width: 40px;
+}
 
-  .totals .totals-item {
-    float: right;
-    clear: both;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .totals .totals-item label {
-    float: left;
-    clear: both;
-    width: 79%;
-    text-align: right;
-  }
-  .totals .totals-item .totals-value {
-    float: right;
-    width: 21%;
-    text-align: right;
-  }
-  .totals .totals-item-total {
-    font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
-  }
-  
-  .checkout {
-    float: right;
-    border: 0;
-    margin-top: 20px;
-    padding: 6px 25px;
-    background-color: #6b6;
-    color: #fff;
-    font-size: 25px;
-    border-radius: 3px;
-  }
-  
-  .checkout:hover {
-    background-color: #494;
-  }
-  
+/* fin panier */
 
 #myHR {
     border: 1px solid black;
