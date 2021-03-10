@@ -459,6 +459,13 @@ textarea {
     }
     .innerblockright {
         padding: 0;
+        border:0;
+    }
+    #mainTitle {
+        font-size: 20px;
+    }
+    #mainheader {
+        text-align: center;
     }
 }
 
