@@ -361,6 +361,33 @@ footer {
     }
 }
 
+
+@media (max-width: 885px) {
+    .menu {
+        position: inherit;
+    }
+    .menu > ul {
+        display: grid;
+    }
+    .menu > ul > .formulaireee {
+        margin-right: 0;
+    }
+    .searchbar {
+        float: none;
+    }
+    .mydropdown-content {
+        min-width: 240px;
+    }
+    .mydropdown-content > a {
+        text-align: center;
+    }
+    .menu input[type=text] {
+        width: 100%;
+    }
+}
+
+
+
 /* Divers */
 
 header>.navbar {
