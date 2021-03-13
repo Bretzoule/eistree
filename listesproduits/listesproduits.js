@@ -8,8 +8,8 @@ function changeVisibility() {
 
 function openNav() {
     document.getElementById("mySidepanel").style.width = "150px";
-  }
+}
   
-  function closeNav() {
+function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
-  }
+}

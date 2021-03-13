@@ -45,37 +45,43 @@
         <div id="centerPanel">
             <p id="mainTitle"><b>Nous contacter &#127811;</b></p>
             <div id="bloc_contact">
-                <form id="formulaireContact" accept-charset="UTF-8" method="post">
+                <form id="formulaireContact" accept-charset="UTF-8">
                     <div class="contactPart">
                         <p>
                             <label for="datecontact">Date du contact</label> <br>
                             <input type="date" id="datecontact" name="datecontact" value="jj/mm/aaaa" min="01/01/2021"
                                 max="01/01/2022" required />
+                            <span id='datecontactManquante'></span><br>
                         </p>
                         <p>
-                            <label for="nom">Nom</label> <br>
+                            <label for="nom">Nom</label><br>
                             <input placeholder="Entrez votre nom" type="text" id="nom" name="nom" required />
+                            <span id='nomManquant'></span><br>
                         </p>
                         <p>
                             <label for="prenom">Prénom</label> <br>
                             <input placeholder="Entrez votre prénom" type="text" id="prenom" name="prenom" required />
+                            <span id='prenomManquant'></span><br>
                         </p>
                         <p>
                             <label for="email">Email</label> <br>
-                            <input placeholder="monmail@monsite.org" type="text" id="email" name="email" required />
+                            <input placeholder="monmail@monsite.org" type="email" id="email" name="email" required />
+                            <span id='emailManquant'></span><br>
                         </p>
                         <p>
                             <label>Genre</label> <br>
-                            <input type="radio" name="sexe" value="femme" id="femme" required />
+                            <input type="radio" name="sexe" value="femme" id="genre" required />
                             <label for="femme">Femme</label>
-                            <input type="radio" name="sexe" value="homme" id="homme" required />
+                            <input type="radio" name="sexe" value="homme" id="genre" required />
                             <label for="homme">Homme</label>
-                            <input type="radio" name="sexe" value="plante" id="plante" required />
+                            <input type="radio" name="sexe" value="plante" id="genre" required />
                             <label for="plante">Plante</label>
+                            <span id='genreManquant'></span><br>
                         </p>
                         <p>
                             <label for="naissance">Date de naissance</label><br>
                             <input type="date" id="naissance" name="naissance" value="jj/mm/aaaa" required />
+                            <span id='naissanceManquante'></span><br>
                         </p>
                         <p>
                             <label for="fonction">Fonction</label> <br>
@@ -85,6 +91,7 @@
                                 <option value="Jardinier">Jardinier</option>
                                 <option value="autre">Autre</option>
                             </select>
+                            <span id='fonctionManquante'></span><br>
                         </p>
                     </div>
                     <div class="contactPart">
@@ -92,11 +99,13 @@
                             <label>Objet</label> <br>
                             <input placeholder="Entrez le sujet de votre mail" type="text" id="sujet" name="sujet"
                                 required />
+                                <span id='sujetManquant'></span><br>
                         </p>
                         <p>
 
                             <textarea name="contenu" cols="40" rows="20" id="contenu" placeholder="Tapez ici votre mail"
                                 required></textarea>
+                                <span id='contenuManquant'></span><br>
                         </p>
                         <p>
                             <input id="specialSubmit" type="submit" value="Envoyer !" />
@@ -106,6 +115,7 @@
             </div>
         </div>
     </div>
+    <script src="contact.js"></script>
     <footer id="footerinner">
         <div id="footerwrapper">
             <div class="footer-left">
