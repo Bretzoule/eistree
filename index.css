@@ -485,6 +485,7 @@ header>.navbar {
 .products {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .product-card {
@@ -615,6 +616,12 @@ header>.navbar {
     }
     .menu input[type=text] {
         width: 100%;
+    }
+}
+
+@media (max-width : 425px) {
+    .products {
+        flex-direction: column;
     }
 }
 
@@ -754,4 +761,15 @@ header>.navbar {
 
 .fondsidepanel {
     background-color:#668A87 ;
+}
+
+/* Zoom */ 
+
+#overlay {
+    border: 1px solid black;
+    width: 350px;
+    height: 350px;
+    display: none;
+    position: absolute;
+    background-repeat: no-repeat;
 }
