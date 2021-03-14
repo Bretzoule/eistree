@@ -43,5 +43,5 @@ De plus, il est aussi possible depuis la page produit de sélectionner la quanti
 
 Toujours sur la page produit, on peut zoomer sur l'image en passant la souris sur l'image. Cependant, ce zoom n'est pas disponible sur mobile.
 
-Enfin, la page "Contact" a elle aussi été améliorée. Ainsi, le formulaire ne peut être envoyé si un des champs est vide et les champs des nom, prenom et e-mail bloquent l'envoi du formulaire s'ils ne sont pas conformes (format de l'e-mail, caractères spéciaux dans nom, prenom par exemple).
+Enfin, la page "Contact" a elle aussi été améliorée. Ainsi, le formulaire ne peut être envoyé si un des champs est vide et les champs des nom, prenom et e-mail bloquent l'envoi du formulaire s'ils ne sont pas conformes (format de l'e-mail, caractères spéciaux dans le nom ou le prénom par exemple).
 
