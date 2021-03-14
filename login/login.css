@@ -433,11 +433,6 @@ header>.navbar {
     display: inherit;
 }
 
-textarea {
-    margin-right: 50px;
-}
-
-
 /* responsiveness */
 @media (max-height:800px) {
     footer {
