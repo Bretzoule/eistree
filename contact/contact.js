@@ -1,4 +1,4 @@
-const verifNomPrenom = /^[a-z,.'-]+$/i;
+const verifNomPrenom = /^[a-zéèçêôçîïùüû,.'-]+$/i;
 const verifMail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]{2,}$/;
 
 window.onload = function() {
@@ -38,7 +38,6 @@ document.getElementById('specialSubmit').addEventListener('click', (event) => {
         emailManquant.style.color = "red";
         event.preventDefault();
     } else if (!verifMail.test(email.value)) {
-        console.log(non)
         emailManquant.textContent = 'Format incorrect... mail@example.test';
         emailManquant.style.color = "red";
         event.preventDefault();
