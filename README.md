@@ -33,3 +33,15 @@ Une fois dans cette liste, seule la page produit de la Monstera (accessible depu
 On y trouve de plus une page permettant d'accéder à son compte, une page de contact, une barre de recherche ainsi qu'un panier. Cependant, ces 4 pages ne sont pas opérationnelles pour l'instant pour les raisons citées précédemment.
 
 La page "Les conseils de Céline" est également inaccessible car en cours de réalisation.
+
+
+## Nouvelles fonctionnalités liées au javascript
+
+Il est désormais possible de voir les stocks disponibles en cliquant sur la sidebar depuis la page "Nos Produits". Ces stocks sont pour l'instant fixés à 100.
+
+De plus, il est aussi possible depuis la page produit de sélectionner la quantité à ajouter au panier, bien que le bouton d'ajout ne soit pas encore fonctionnel.
+
+Toujours sur la page produit, on peut zoomer sur l'image en passant la souris sur l'image. Cependant, ce zoom n'est pas disponible sur mobile.
+
+Enfin, la page "Contact" a elle aussi été améliorée. Ainsi, le formulaire ne peut être envoyé si un des champs est vide et les champs des nom, prenom et e-mail bloquent l'envoi du formulaire s'ils ne sont pas conformes (format de l'e-mail, caractères spéciaux dans nom, prenom par ex)
+
