@@ -6,6 +6,10 @@
     <link rel="shortcut icon" href="/assets/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/index.css">
     <title>EISTree - Fiche Monstera</title>
 </head>
@@ -18,8 +22,9 @@
     <nav class="menu">
         <ul>
             <li><a href="/index.html">Accueil</a></li>
-            <li class="dropdown"><a class="active" class="dropdownbtn" href="/listesproduits/listeproduits.html">Nos Produits</a>
-                <div class="dropdown-content">
+            <li class="mydropdown"><a class="active" class="mydropdownbtn" href="/listesproduits/listeproduits.html">Nos
+                    Produits</a>
+                <div class="mydropdown-content">
                     <a href="/listesproduits/arbustes.html">Arbustes &#x1F333;</a>
                     <a href="/listesproduits/plantesfleuries.html">Plantes fleuries &#x1F33A;</a>
                     <a href="/listesproduits/plantesinterieur.html">Plantes d'intérieur &#x1F335;</a>
@@ -39,8 +44,10 @@
     <div id="page">
         <div class="produit">
             <div class="donneesProduit">
-                <img class="imageProduit" src="/images/monstera.jpg" alt="monstera" class="image">
+                <img class="imageProduit" src="/images/monstera.jpg" alt="monstera" onmousemove="zoomIn(event, this)"
+                    onmouseout="zoomOut()" class="image">
                 <div class="description">
+                    <div id="overlay"></div>
                     <div class="general">
                         <h3 class="nom_commun">Monstera</h3>
                         <h4 class="nom_scientifique">Monstera Deliciosa</h4>
@@ -49,6 +56,23 @@
                             Araceae.<br>Facile d'entretien, cette plante est idéale pour décorer la maison.</p>
                     </div>
                     <div class="ajoutpanier">
+                        <div class="row-cols-1 pb-2">
+                            <span class="input-group-btn noblock">
+                                <button type="button" id="minus" class="btn btn-default btn-number border"
+                                    data-type="minus" onclick="decrementer(this)">
+                                    <span class="fa fa-minus"></span>
+                                </button>
+                            </span>
+                            <input type="text" disabled="disabled" name="quantity"
+                                class="form-control input-number w-25 number d-inline-block" value="1" min="1">
+                            <span class="input-group-btn">
+                                <button type="button" id="plus" class="btn btn-default btn-number border"
+                                    data-type="plus" onclick="incrementer(this)">
+                                    <span class="fa fa-plus"></span>
+                                    <span id="stock" hidden>100</span>
+                                </button>
+                            </span>
+                        </div>
                         <input class="boutonpanier" type="button" value="Ajouter au panier">
                     </div>
                 </div>
@@ -85,7 +109,7 @@
                 <div class="innerblockright">
                     <h3>Liens utiles :</h3>
                     <p class="footer-links">
-                        <a href="#">Accueil</a>
+                        <a href="/index.html">Accueil</a>
                         |
                         <a href="#">Les conseils de Céline</a>
                         |
@@ -104,5 +128,6 @@
     </footer>
 
 </body>
+<script src="/js/ficheproduit.js"></script>
 
 </html>
