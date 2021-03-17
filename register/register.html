@@ -9,20 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-<!-- bootstrap -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/register/register.css">
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/login/login.css">
     <title>EISTree - Créer un compte</title>
 </head>
 
 <body>
     <header id="mainheader">
-        <a href="/index.html"><img id="logoTopDroit" src="/assets/textlogo.png" alt="fleur"></a>
+        <a href="/index.php"><img id="logoTopDroit" src="/assets/textlogo.png" alt="fleur"></a>
     </header>
     <nav class="menu">
         <ul>
-            <li><a href="/index.html">Accueil</a></li>
+            <li><a href="/index.php">Accueil</a></li>
             <li class="mydropdown"><a class="mydropdownbtn" href="/listesproduits/listeproduits.html">Nos Produits</a>
                 <div class="mydropdown-content">
                     <a href="/listesproduits/arbustes.html">Arbustes &#x1F333;</a>
@@ -46,15 +46,16 @@
             <p id="mainTitle"><b>M'enregistrer &#127811;</b></p>
             <div id="fullPanel">
                 <div class="inputPanel">
-                    <form accept-charset="UTF-8" action="#" method="post">
-                        <p  class="petitTitreSection">Mes informations personnelles :</p>
-                        <input name="nom" type="text"  value="" placeholder="Nom" required /><br>
+                    <form accept-charset="UTF-8" action="" method="post">
+                        <p class="petitTitreSection">Mes informations personnelles :</p>
+                        <input name="nom" type="text" value="" placeholder="Nom" required /><br>
 
                         <input name="prenom" type="text" value="" placeholder="Prénom" required /><br>
 
                         <input name="adresse" type="text" value="" placeholder="Adresse Postale" required /><br>
 
-                        <input name="codepostal" type="text" pattern="[^\s\x3B]+" value="" placeholder="Code Postal" required /><br>
+                        <input name="codepostal" type="text" pattern="[^\s\x3B]+" value="" placeholder="Code Postal"
+                            required /><br>
 
                         <input name="" type="text" value="" placeholder="Ville" required /><br>
                 </div>
@@ -66,10 +67,11 @@
                     <input name="password" type="password" pattern="[^\s\x3B]+" value="" placeholder="Mot de passe"
                         oninvalid='setCustomValidity("Champ obligatoire - Merci de ne pas utiliser \"espace\"")'
                         oninput="setCustomValidity('')" required />
-                        <input name="confirmpassword" type="password" pattern="[^\s\x3B]+" value="" placeholder="Confirmez le mot de passe"
+                    <input name="confirmpassword" type="password" pattern="[^\s\x3B]+" value=""
+                        placeholder="Confirmez le mot de passe"
                         oninvalid='setCustomValidity("Champ obligatoire - Merci de ne pas utiliser \"espace\"")'
                         oninput="setCustomValidity('')" required /><br>
-                    <a href="#"><input type="submit" value="Créer mon compte"></input></a>
+                    <input type="submit" value="Créer !"></input>
                     </form>
                 </div>
             </div>
@@ -97,7 +99,7 @@
                 <div class="innerblockright">
                     <h3>Liens utiles :</h3>
                     <p class="footer-links">
-                        <a href="/index.html">Accueil</a>
+                        <a href="/index.php">Accueil</a>
                         |
                         <a href="#">Les conseils de Céline</a>
                         |
