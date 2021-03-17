@@ -25,7 +25,7 @@ include($_SERVER['DOCUMENT_ROOT'].'includes/navbar.php');
             </ul>
             <li> <a href="/panier/panier.php">Panier</a>
             </li>
-            <li> <a href="/contact/contact.html">Contact</a>
+            <li> <a href="/contact/contact.php">Contact</a>
             </li>
             <p class="petitTitreSection">Pages de compte :</p>
             <li> <a href="/login/login.php">Se connecter</a>

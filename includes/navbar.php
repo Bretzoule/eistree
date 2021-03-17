@@ -17,7 +17,7 @@
                         } ?>" href="/login/login.php">Mon Compte</a></li>
         <li><a class="<?php if ($active === "contact") {
                             echo "active";
-                        } ?>" href="/contact/contact.html">Contact</a></li>
+                        } ?>" href="/contact/contact.php">Contact</a></li>
         <li id="panier"><a href="/panier/panier.php">Panier</a></li>
         <li class="formulaireee">
             <form action="" method="get"><input class="searchbar" name="recherche" type="text" value="" onkeyup="" placeholder="(Recherche.....)" />

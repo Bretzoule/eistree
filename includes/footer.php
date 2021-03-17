@@ -27,7 +27,7 @@
                         |
                         <a href="/sitemap/sitemap.php">Plan du site</a>
                         |
-                        <a href="/contact/contact.html">Contact</a>
+                        <a href="/contact/contact.php">Contact</a>
                     </p>
                 </div>
             </div>
