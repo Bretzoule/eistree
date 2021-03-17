@@ -25,7 +25,7 @@
                         |
                         <a href="#">Les conseils de Céline</a>
                         |
-                        <a href="/sitemap/sitemap.html">Plan du site</a>
+                        <a href="/sitemap/sitemap.php">Plan du site</a>
                         |
                         <a href="/contact/contact.html">Contact</a>
                     </p>

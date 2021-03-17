@@ -13,6 +13,13 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/index.css">
+    <?php 
+    if (in_array($active, array("contact","register","login"))) {
+        echo  '<link rel="stylesheet" href="/login/login.css">';
+    } elseif ($active === "panier") {
+        echo '<link rel="stylesheet" href="/panier/panier.css">';
+    }
+    ?>
     <title><?= $title ?></title>
 </head>
 

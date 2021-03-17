@@ -26,7 +26,7 @@ html, body {
 }
 
 .menu {
-    z-index: 2;
+    z-index: 3;
     position: sticky;
     top: 0;
     -webkit-box-shadow: 0 8px 6px -6px black;
@@ -102,7 +102,7 @@ li.mydropdown {
     background-color: #f9f9f9;
     min-width: 120px;
     box-shadow: 2px 8px 16px 0px rgba(0, 0, 0, 0.322);
-    z-index: 1;
+    z-index: 3;
 }
 
 .mydropdown-content a {
@@ -715,7 +715,7 @@ header>.navbar {
 
 .myownsidepanel  {
     width: 0;
-    z-index: 1;
+    z-index: 2;
     box-sizing: content-box;
     position: absolute;
     height: 150px;
@@ -725,7 +725,6 @@ header>.navbar {
     padding-top: 60px;
     border-bottom-right-radius: 10px;
   }
-  
   .myownsidepanel a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
