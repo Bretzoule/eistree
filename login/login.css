@@ -149,9 +149,40 @@ li.mydropdown {
     width: 100%;
     text-align: center;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     min-height: calc(100vh - 631px);
+}
+
+#fullPanel {
+    background: #F8F8F4;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.inputPanel {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 25px 0px gray;
+}
+
+.inputPanelFinal {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 25px 0px gray;
 }
 
 #bloc_Login {
@@ -162,13 +193,14 @@ li.mydropdown {
     border-radius: 5px;
     background-color: #f2f2f2;
     margin-bottom: 30px;
-    padding: 15px;   
-    width:fit-content;
+    padding: 15px;
+    width: fit-content;
     border-radius: 30px;
     box-shadow: 0px 10px 25px 0px gray;
 }
+
 input[type=button], input[type=submit], input[type=reset] {
-    background-color:#83BEEC;
+    background-color: #83BEEC;
     border: none;
     color: #284243;
     margin-left: 30px;
@@ -178,11 +210,14 @@ input[type=button], input[type=submit], input[type=reset] {
     text-decoration: none;
     cursor: pointer;
     width: 232px;
-  }
-  input[type=submit]:hover, input[type=button]:hover {
+}
+
+input[type=submit]:hover, input[type=button]:hover {
     background-color: #6694B9;
-  }
-  input[type=text],input[type=date],input[type=number],input[type=password], select {
+    text-align: center;
+}
+
+input[type=text], input[type=date], input[type=number], input[type=password], select {
     padding: 12px 20px;
     margin: 4px 0;
     margin-left: 30px;
@@ -190,11 +225,22 @@ input[type=button], input[type=submit], input[type=reset] {
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 200px;
-  }
+    width: 232px;
+}
+
+@media (max-width: 750px) {
+    #fullPanel {
+        flex-direction: column;
+    }
+}
 
 #mainTitle {
     font-size: 50px;
+    font-family: 'Lobster', cursive;
+}
+
+.petitTitreSection {
+    font-size: 18px;
     font-family: 'Lobster', cursive;
 }
 
@@ -413,7 +459,7 @@ header>.navbar {
     border-radius: 5px;
     background-color: #f2f2f2;
     margin-bottom: 30px;
-    padding: 15px;   
+    padding: 15px;
     border-radius: 30px;
     box-shadow: 0px 10px 25px 0px gray;
 }
@@ -425,8 +471,8 @@ header>.navbar {
     flex-direction: column;
 }
 
-.contactPart > p {
-    margin-top:10px;
+.contactPart>p {
+    margin-top: 10px;
 }
 
 #formulaireContact {
@@ -434,6 +480,7 @@ header>.navbar {
 }
 
 /* responsiveness */
+
 @media (max-height:800px) {
     footer {
         position: static;
@@ -454,7 +501,7 @@ header>.navbar {
     }
     .innerblockright {
         padding: 0;
-        border:0;
+        border: 0;
     }
     #mainTitle {
         font-size: 20px;
@@ -464,13 +511,12 @@ header>.navbar {
     }
 }
 
-
 @media (max-width:650px) {
     #formulaireContact {
         display: flex;
         flex-direction: column;
         align-items: center;
-        }
+    }
     .contactPart {
         width: 100%;
     }
@@ -479,16 +525,14 @@ header>.navbar {
     }
 }
 
-
-
 @media (max-width: 885px) {
     .menu {
         position: inherit;
     }
-    .menu > ul {
+    .menu>ul {
         display: grid;
     }
-    .menu > ul > .formulaireee {
+    .menu>ul>.formulaireee {
         margin-right: 0;
     }
     .searchbar {
@@ -497,7 +541,7 @@ header>.navbar {
     .mydropdown-content {
         min-width: 240px;
     }
-    .mydropdown-content > a {
+    .mydropdown-content>a {
         text-align: center;
     }
     .menu input[type=text] {
@@ -505,3 +549,22 @@ header>.navbar {
     }
 }
 
+/* Divers */
+
+header>.navbar {
+    text-align: center;
+}
+
+.blockCenter {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+    color: #ffffff;
+    font: normal;
+}
+
+.copyright>img {
+    width: 96px;
+}
