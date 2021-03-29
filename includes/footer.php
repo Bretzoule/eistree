@@ -9,7 +9,7 @@
                     doux
                     commerciaux et d'adorables producteurs <span class="clear">❤️</span> !</p>
                 <p class="footer-icons">
-                    <a href="mailto:contact@eistree.fr">&#x1F4E7;</a>
+                    <a href="mailto:contact@eistree.eu">&#x1F4E7;</a>
                     |
                     <a href="https://gitlab.etude.eisti.fr/leflochtho/eistree">&#x1F4BB;</a>
                     |
@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="copyright">
-            <img src="/assets/footerlogo.png">
+            <img alt="footerlogo" src="/assets/footerlogo.png">
             <br>
             &copy; EISTree - Tout droits réservés.
         </div>

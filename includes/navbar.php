@@ -5,11 +5,11 @@
                         } ?>" href="/index.php">Accueil</a></li>
         <li class="mydropdown"><a class="mydropdownbtn <?php if ($active === "produits") {
                                                             echo "active";
-                                                        } ?>" href="/listesproduits/listeproduits.html">Nos Produits</a>
+                                                        } ?>" href="/listesproduits/produits.php">Nos Produits</a>
             <div class="mydropdown-content">
-                <a href="/listesproduits/arbustes.html">Arbustes &#x1F333;</a>
-                <a href="/listesproduits/plantesfleuries.html">Plantes fleuries &#x1F33A;</a>
-                <a href="/listesproduits/plantesinterieur.html">Plantes d'intérieur &#x1F335;</a>
+                <a href="/listesproduits/produits.php?cat=arbustes">Arbustes &#x1F333;</a>
+                <a href="/listesproduits/produits.php?cat=plantesf">Plantes fleuries &#x1F33A;</a>
+                <a href="/listesproduits/produits.php?cat=plantesI">Plantes d'intérieur &#x1F335;</a>
             </div>
         </li>
         <li><a class="<?php if (in_array($active, array('compte', 'register', 'login'))) {
