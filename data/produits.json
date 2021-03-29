@@ -1,0 +1,80 @@
+{
+    "arbustes": {
+        "erable": {
+            "nom":"Erable",
+            "nomscien":"Acer Japonicum",
+            "img":"/images/erable.jpg",
+            "prix":"240.00€",
+            "desc": "oui",
+            "stock": "100"
+        },
+        "citronnier": {
+            "nom":"Citronnier",
+            "nomscien":"Citrus Lemon",
+            "img" : "/images/citronnier.jpg",
+            "prix":"60.00€",
+            "desc":"oui",
+            "stock": "100"
+        },
+        "rincebouteille": {
+            "nom":"Rince Bouteille",
+            "nomscien":"Callistemon Citrinus",
+            "img" : "/images/rincebouteille.jpg",
+            "prix":"40.00€",
+            "desc": "oui",
+            "stock": "100"
+        }
+    },
+    "plantesfleuries": {
+        "chamaedora": {
+            "nom":"Chamaedora",
+            "nomscien":"Chamaedora Elegantis",
+            "img":"/images/chamaedorea.jpg",
+            "prix":"8.00€",
+            "desc": "oui",
+            "stock": "100"
+        },
+        "monsteradeliciosa": {
+            "nom":"Monstera",
+            "nomscien":"Monstera Deliciosa",
+            "img":"/images/monstera.jpg",
+            "prix":"12.00€",
+            "desc": "La monstera, ou faux philodendron, est une plante vivace de la famille des Araceae. <br> Facile d'entretien, cette plante est idéale pour décorer la maison.",
+            "stock": "100"
+        },
+        "scindapsusaureus": {
+            "nom":"Pothos",
+            "nomscien":"Scindapsus Aureus",
+            "img":"/images/pothos.jpg",
+            "prix":"8.00€",
+            "desc": "oui",
+            "stock": "100"
+        }
+    },
+    "plantesinterieur": {
+        "hibiscus": {
+            "nom":"Hibiscus",
+            "nomscien":"Hibiscus Syriacus",
+            "img":"/images/hibiscus.jpg",
+            "prix":"40.00€",
+            "desc": "oui",
+            "stock": "100"
+        },
+        "strelitzia": {
+            "nom":"Strelitzia",
+            "nomscien":"Strelitzia Reginae",
+            "img":"/images/strelitzia.jpg",
+            "prix":"35.00€",
+            "desc": "oui",
+            "stock": "100"
+        },
+        "bougainvillier": {
+            "nom":"bougainvillier",
+            "nomscien":"Bougainvillea Glabra",
+            "img":"/images/bougainvillier.jpg",
+            "prix":"28.00€",
+            "desc": "oui",
+            "stock": "100"
+        }
+    }
+}
