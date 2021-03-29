@@ -31,14 +31,14 @@ include($_SERVER['DOCUMENT_ROOT'] . 'includes/navbar.php');
                             <input placeholder="monmail@monsite.org" type="email" id="email" name="email" required />
                         </p>
                         <span id='emailManquant'></span>
-                        <p>
+                        <p id="blocGenre">
                             <label>Genre</label> <br>
-                            <input type="radio" name="sexe" value="femme" id="genre" required checked />
-                            <label for="femme">Femme</label>
-                            <input type="radio" name="sexe" value="homme" id="genre" required />
-                            <label for="homme">Homme</label>
-                            <input type="radio" name="sexe" value="plante" id="genre" required />
-                            <label for="plante">Plante</label>
+                            <input type="radio" name="sexe" value="femme" id="genref" required checked />
+                            <label for="genref">Femme</label>
+                            <input type="radio" name="sexe" value="homme" id="genreh" required />
+                            <label for="genreh">Homme</label>
+                            <input type="radio" name="sexe" value="plante" id="genrep" required />
+                            <label for="genrep">Plante</label>
                             <span id='genreManquant'></span><br>
                         </p>
                         <p>
@@ -78,7 +78,7 @@ include($_SERVER['DOCUMENT_ROOT'] . 'includes/navbar.php');
             </div>
         </div>
     </div>
-    <script src="contact.js"></script>
+    <script src="/js/contact.js"></script>
  <?php 
  include($_SERVER['DOCUMENT_ROOT'] . 'includes/footer.php');
  ?>

@@ -1,8 +1,8 @@
 <?php
 $active = "sitemap";
 $title = "EISTree - Plan du site.";
-include($_SERVER['DOCUMENT_ROOT'].'includes/header.php');
-include($_SERVER['DOCUMENT_ROOT'].'includes/navbar.php');
+include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php');
+include($_SERVER['DOCUMENT_ROOT'].'/includes/navbar.php');
 ?>
 <div id="page">
     <div id="centerPanel">
@@ -10,7 +10,7 @@ include($_SERVER['DOCUMENT_ROOT'].'includes/navbar.php');
         <ul id="sitemapul">
             <p class="petitTitreSection">Pages standards :</p>
             <li><a href="/index.php">Accueil</a></li>
-            <li><a href="/listesproduits/listeproduits.html">Nos produits</a></li>
+            <li><a href="/listesproduits/produits.php">Nos produits</a></li>
             <ul>
                 <li><a href="/listesproduits/arbustes.html">Arbustes (remplacé par recherche PHP dans le futur)</a>
                 </li>
