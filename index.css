@@ -183,7 +183,7 @@ ul>li {
 
 /* ajout responsiveness + changment aspect ratio et background */
 
-[type=radio] {
+#slider > [type=radio] {
     display: none;
 }
 
