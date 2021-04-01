@@ -9,6 +9,7 @@ include($_SERVER['DOCUMENT_ROOT'] . 'includes/navbar.php');
             <p id="mainTitle"><b>Nous contacter &#127811;</b></p>
             <div id="bloc_contact">
                 <form id="formulaireContact" accept-charset="UTF-8">
+                    <?php echo $message ?>
                     <div class="contactPart">
                         <p>
                             <label for="datecontact">Date du contact</label> <br>
@@ -79,6 +80,47 @@ include($_SERVER['DOCUMENT_ROOT'] . 'includes/navbar.php');
         </div>
     </div>
     <script src="/js/contact.js"></script>
+
+    <?php
+    @$datecontact=$_POST["datecontact"];
+    @$nom=$_POST["nom"];
+    @$prenom=$_POST["prenom"];
+    @$email=$_POST["email"];
+    @$blocGenre=$_POST["blocGenre"];
+    @$naissance=$_POST["naissance"];
+    @$fonction=$_POST["fonction"];
+    @$sujet=$_POST["sujet"];
+    @$contenu=$_POST["contenu"];
+    @$specialSubmit=$_POST["specialSubmit"];
+    $destinataire = 'contact@eistree.eu';
+    $envoyeur = 'From: ' . $email;
+
+    if(isset($specialSubmit)){
+        if(empty($datecontact))
+        $message='<div class="erreur">Veuillez entrer la date de contact</div>';
+        elseif(empty($nom))
+        $message='<div class="erreur">Veuillez saisir votre nom</div>';
+        elseif(empty($prenom))
+        $message='<div class="erreur">Veuillez saisir votre prénom</div>';
+        elseif(empty($email))
+        $message='<div class="erreur">Veuillez saisir votre email</div>';
+        elseif(!filter_var($email, FILTER_VALIDATE_EMAIL))
+        
+        $message='<div class="erreur">Veuillez saisir un email valide (nom@exemple.com)</div>';
+        // ajouter vérification blocGenre
+        elseif($naissance!=$naissance)
+        $message='<div class="erreur">Veuillez entrer votre date de naissance</div>';
+        elseif(empty($fonction))
+        $message='<div class="erreur">Veuillez sélectionner votre fonction</div>';
+        elseif(empty($sujet))
+        $message='<div class="erreur">Veuillez saisir le sujet de votre mail</div>';
+        elseif(empty($contenu))
+        $message='<div class="erreur">Veuillez saisir le contenu de votre mail</div>';
+        else
+        mail($destinataire, $sujet, $contenu, $envoyeur);
+    }
+?>
+
  <?php 
  include($_SERVER['DOCUMENT_ROOT'] . 'includes/footer.php');
  ?>
