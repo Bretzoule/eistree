@@ -617,11 +617,17 @@ header>.navbar {
     .menu input[type=text] {
         width: 100%;
     }
+    .myAlert {
+        left: 27%!important;
+    }
 }
 
 @media (max-width : 425px) {
     .products {
         flex-direction: column;
+    }
+    .myAlert {
+        left: 5%!important;
     }
 }
 
@@ -771,4 +777,21 @@ header>.navbar {
     display: none;
     position: absolute;
     background-repeat: no-repeat;
+}
+
+/* Alert box */
+
+.myAlert {
+    z-index: 5!important;
+    align-items: center;
+    top: 10px;
+    left: 40%;
+}
+
+.myAlert > .closebtn {
+    color: #818181;
+    text-decoration: none;
+    font-size: 36px;
+    position: inherit;
+    top: -3px;
 }
