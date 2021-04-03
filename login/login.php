@@ -8,7 +8,7 @@ include($_SERVER['DOCUMENT_ROOT'].'includes/navbar.php');
     <div id="centerPanel">
         <p id="mainTitle"><b>Mon compte &#127811;</b></p>
         <div id="bloc_Login">
-            <form accept-charset="UTF-8" action="#" method="post">
+            <form accept-charset="UTF-8" action="/login/verifLogin.php" method="post">
                 <input name="email" type="text" pattern="[^\s\x3B]+" value="" placeholder="Email" oninvalid='setCustomValidity("Champ obligatoire - Merci de ne pas utiliser \"espace\" et ; ")' oninput="setCustomValidity('')" required /><br>
                 <input name="password" type="password" pattern="[^\s\x3B]+" value="" placeholder="Mot de passe" oninvalid='setCustomValidity("Champ obligatoire - Merci de ne pas utiliser \"espace\" et ; ")' oninput="setCustomValidity('')" required /><br>
                 <input type="submit" value="Se connecter"></input> <br>
