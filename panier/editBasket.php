@@ -1,7 +1,7 @@
 <?php 
 session_start();
-if(isset($_GET['id']) && isset($_SESSION['panier'][$_GET['id']])) {
-    $id = $_GET['id'];
+if(isset($_GET['id']) && isset($_SESSION['panier'][htmlspecialchars($_GET['id'])])) {
+    $id = htmlspecialchars($_GET['id']);
     if ((isset($_GET['plus']))) {
         if ($_SESSION['panier'][$id][3] < $_SESSION['panier'][$id][4]) {
             $_SESSION['panier'][$id][3]++;
