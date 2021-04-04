@@ -3,7 +3,7 @@ $active = "produits";
 $title = "EISTree - ";
 include($_SERVER['DOCUMENT_ROOT'] . 'includes/varSession.inc.php');
 if (isset($_GET['cat'])) {
-    switch ($_GET['cat']) {
+    switch (htmlspecialchars($_GET['cat'])) {
         case 'arbustes':
             $addtitle = "Nos arbustes &#x1F333;.";
             $produits = $articlesArbustes;

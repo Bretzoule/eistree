@@ -14,19 +14,19 @@ include('includes/navbar.php');
             <input type="radio" name="slider" id="s4">
             <input type="radio" name="slider" id="s5">
             <label for="s1" id="slide1">
-                <div class="addressInLabel"><a href="http://google.fr">link</a></div>
+                <div class="addressInLabel"><a href="/fichesproduits/article.php?id=bougainvillier">Bougainvillier</a></div>
             </label>
             <label for="s2" id="slide2">
-                <div class="addressInLabel"><a href="http://google.fr">link</a></div>
+                <div class="addressInLabel"><a href="/fichesproduits/article.php?id=rincebouteille">Rincebouteille</a></div>
             </label>
             <label for="s3" id="slide3">
-                <div class="addressInLabel"><a href="http://google.fr">link</a></div>
+                <div class="addressInLabel"><a href="/fichesproduits/article.php?id=hibiscus">Hibiscus</a></div>
             </label>
             <label for="s4" id="slide4">
-                <div class="addressInLabel"><a href="http://google.fr">link</a></div>
+                <div class="addressInLabel"><a href="/fichesproduits/article.php?id=chamaedora">Chamaedora</a></div>
             </label>
             <label for="s5" id="slide5">
-                <div class="addressInLabel"><a href="http://google.fr">link</a></div>
+                <div class="addressInLabel"><a href="/fichesproduits/article.php?id=scindapsusaureus">Pothos</a></div>
             </label>
         </section>
     </div>
