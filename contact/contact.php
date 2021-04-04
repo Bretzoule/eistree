@@ -148,7 +148,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </div>
 </div>
-<!-- <script src="/js/contact.js"></script> -->
+<script src="/js/contact.js"></script>
 
 <?php
 include($_SERVER['DOCUMENT_ROOT'] . 'includes/footer.php');
