@@ -5,15 +5,21 @@
             "nomscien":"Acer Japonicum",
             "img":"/images/erable.jpg",
             "prix":"240.00€",
-            "desc": "oui",
+            "desc": "Cet arbre originaire du Japon égaye les jardins par son feuillage rouge orangé.",
+            "hauteur":"6 mètres",
+            "température":"Jusqu'à -15°C",
+            "feuillage":"Caduc",
             "stock": "100"
         },
         "citronnier": {
-            "nom":"Citronnier",
-            "nomscien":"Citrus Lemon",
+            "nom":"Citronnier 4 saisons",
+            "nomscien":"Citrus Limon",
             "img" : "/images/citronnier.jpg",
             "prix":"60.00€",
-            "desc":"oui",
+            "desc":"Donnant des fruits à toutes les saisons, le citronnier est cependant cultivable en pleine terre uniquement sur le pourtour méditerranéen.",
+            "hauteur":"3 à 5 mètres",
+            "température": "Jusqu'à 3°C",
+            "feuillage":"Persistant",
             "stock": "100"
         },
         "rincebouteille": {
@@ -21,17 +27,24 @@
             "nomscien":"Callistemon Citrinus",
             "img" : "/images/rincebouteille.jpg",
             "prix":"40.00€",
-            "desc": "oui",
+            "desc": "Fleurissant l'été, le callistemon -ou rince-bouteille- peut être planté en pleine terre uniquement dans les régions au climat doux.",
+            "hauteur":"1 à 3 mètres",
+            "température":"Jusqu'à -6°C",
+            "feuillage":"Persistant",
+            "floraison": "De Juin à Août",
             "stock": "100"
         }
     },
-    "plantesfleuries": {
-        "chamaedora": {
+    "plantesinterieur": {
+        "chamaedorea": {
             "nom":"Chamaedora",
-            "nomscien":"Chamaedora Elegantis",
+            "nomscien":"Chamaedora Elegans",
             "img":"/images/chamaedorea.jpg",
             "prix":"8.00€",
-            "desc": "oui",
+            "desc": "Petit palmier facile d'entretien, le chamaedorea assainit l'air et supporte la fumée.",
+            "arrosage":"3x/semaine en été, 1x/semaine en hiver",
+            "luminosité":"Lumière vive sans soleil ou mi-ombre",
+            "température":"Entre 13°C et 25°C",
             "stock": "100"
         },
         "monsteradeliciosa": {
@@ -40,24 +53,33 @@
             "img":"/images/monstera.jpg",
             "prix":"12.00€",
             "desc": "La monstera, ou faux philodendron, est une plante vivace de la famille des Araceae. <br> Facile d'entretien, cette plante est idéale pour décorer la maison.",
+            "arrosage":"1x/semaine, à espacer en hiver",
+            "luminosité":"Tout type de luminosité",
+            "température": "Entre 13°C et 25°C",
             "stock": "100"
         },
-        "scindapsusaureus": {
+        "epipremnumaurem": {
             "nom":"Pothos",
-            "nomscien":"Scindapsus Aureus",
+            "nomscien":"Epipremnum Aureum",
             "img":"/images/pothos.jpg",
             "prix":"8.00€",
-            "desc": "oui",
+            "desc": "Plante grimpante très facile d'entretien, le pothos est la plante idéale pour les débutants. <br> Attention à ne pas en planter dans votre jardin si vous habitez en Floride car c'est une plante invasive là-bas.",
+            "arrosage":"2x/semaine en été, 1x/semaine en hiver",
+            "luminosité":"Lumière vive sans soleil ou mi-ombre",
+            "température": "Entre 16°C et 22°C",
             "stock": "100"
         }
     },
-    "plantesinterieur": {
+    "plantesfleuries": {
         "hibiscus": {
             "nom":"Hibiscus",
             "nomscien":"Hibiscus Syriacus",
             "img":"/images/hibiscus.jpg",
             "prix":"40.00€",
-            "desc": "oui",
+            "desc": "L'hibiscus est un genre d'arbustes de la famille des Malvaceae. En grec le thème hibiscus signifié 'Guimauve'.",
+            "température": "Jusqu'à -15°C",
+            "floraison":"De Juillet à Septembre",
+            "feuillage":"Caduc",
             "stock": "100"
         },
         "strelitzia": {
@@ -65,7 +87,10 @@
             "nomscien":"Strelitzia Reginae",
             "img":"/images/strelitzia.jpg",
             "prix":"35.00€",
-            "desc": "oui",
+            "desc": "Le Strelitzia est une plante vivace tropicale d'origine sud-africaine pouvant atteindre 6m de haut.",
+            "température": "Entre 8°C et 28°C",
+            "floraison":"De Juin à Juillet",
+            "feuillage":"Persistant",
             "stock": "100"
         },
         "bougainvillier": {
@@ -73,7 +98,10 @@
             "nomscien":"Bougainvillea Glabra",
             "img":"/images/bougainvillier.jpg",
             "prix":"28.00€",
-            "desc": "oui",
+            "desc": "Originaire du Brésil, le bougainvillier apporte une touche méditerranéenne à n'importe quel jardin.",
+            "température": "Pas moins de 5°C",
+            "floraison":"De Mai à Novembre",
+            "feuillage":"Persistant",
             "stock": "100"
         }
     }
