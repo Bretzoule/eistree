@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $messageemailvalide = 'Veuillez saisir un email valide (nom@exemple.com)';
         $boolemailvalide = false;
     }
-    if (empty($_SESSION["genre"]) || ($_SESSION["genre"] != "plante" && $_SESSION["genre"] != "homme" && $_SESSION["genre"] != "femme")) {
+    if (empty($_SESSION["genre"]) || (($_SESSION["genre"] != "plante") && ($_SESSION["genre"] != "homme") && ($_SESSION["genre"] != "femme"))) {
         $messagegenre = 'Veuillez sélectionner un genre';
         $boolgenre = false;
     }
@@ -105,11 +105,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <span id='emailManquant'><?php if(!empty($messageemail)){echo $messageemail;} elseif(!empty($messageemailvalide)){echo $messageemailvalide;}?></span>
                     <p id="genre">
                         <label>Genre</label> <br>
-                        <input type="radio" name="sexe" value="femme" id="genref" required <?php if((isset($_SESSION["genre"]) && $_SESSION["genre"] === "femme") || empty($_SESSION["genre"])){echo 'checked="true"';} ?> required />
+                        <input type="radio" name="genre" value="femme" id="genref" required <?php if((isset($_SESSION["genre"]) && $_SESSION["genre"] === "femme") || empty($_SESSION["genre"])){echo 'checked="true"';} ?> required />
                         <label for="genref">Femme</label>
-                        <input type="radio" name="sexe" value="homme" id="genreh" <?php if(isset($_SESSION["genre"]) && $_SESSION["genre"] === "homme"){echo 'checked="true"';} ?> required />
+                        <input type="radio" name="genre" value="homme" id="genreh" <?php if(isset($_SESSION["genre"]) && $_SESSION["genre"] === "homme"){echo 'checked="true"';} ?> required />
                         <label for="genreh">Homme</label>
-                        <input type="radio" name="sexe" value="plante" id="genrep" <?php if(isset($_SESSION["genre"]) && $_SESSION["genre"] === "plante"){echo 'checked="true"';} ?> required />
+                        <input type="radio" name="genre" value="plante" id="genrep" <?php if(isset($_SESSION["genre"]) && $_SESSION["genre"] === "plante"){echo 'checked="true"';} ?> required />
                         <label for="genrep">Plante</label>
                         <span id='genreManquant'><?php echo $messagegenre ?></span><br>
                     </p>
