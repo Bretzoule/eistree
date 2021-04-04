@@ -29,7 +29,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/navbar.php');
             </li>
             <li> <a href="/account/account.php">Mon compte</a>
             </li>
-            <li> <a href="/login/confirmResetPW.php">J'ai oublié mon mot de passe</a>
+            <li> <a href="/login/forgotPw.php">J'ai oublié mon mot de passe</a>
             </li>
             <li> <a href="/register/register.php">S'enregistrer</a>
             </li>
