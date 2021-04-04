@@ -183,7 +183,7 @@ ul>li {
 
 /* ajout responsiveness + changment aspect ratio et background */
 
-#slider > [type=radio] {
+#slider>[type=radio] {
     display: none;
 }
 
@@ -289,8 +289,9 @@ ul>li {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:50%;
-    text-indent: -9999px;   /* encore le trix pour cacher le texte */
+    padding: 50%;
+    text-indent: -9999px;
+    /* encore le trix pour cacher le texte */
 }
 
 /* Recherche */
@@ -579,7 +580,7 @@ header>.navbar {
     }
     .innerblockright {
         padding: 0;
-        border:0;
+        border: 0;
     }
     #mainTitle {
         font-size: 20px;
@@ -599,10 +600,10 @@ header>.navbar {
     .menu {
         position: inherit;
     }
-    .menu > ul {
+    .menu>ul {
         display: grid;
     }
-    .menu > ul > .formulaireee {
+    .menu>ul>.formulaireee {
         margin-right: 0;
     }
     .searchbar {
@@ -611,7 +612,7 @@ header>.navbar {
     .mydropdown-content {
         min-width: 240px;
     }
-    .mydropdown-content > a {
+    .mydropdown-content>a {
         text-align: center;
     }
     .menu input[type=text] {
@@ -622,7 +623,7 @@ header>.navbar {
     }
 }
 
-@media (max-width : 425px) {
+@media (max-width: 425px) {
     .products {
         flex-direction: column;
     }
@@ -631,24 +632,26 @@ header>.navbar {
     }
 }
 
-
 /* The switch - the box around the slider */
+
 .switch {
     position: relative;
     display: inline-block;
     width: 30px;
     height: 17px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
+}
+
+/* Hide default HTML checkbox */
+
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  /* btn Slide */
-  .btnSlide {
+}
+
+/* btn Slide */
+
+.btnSlide {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -658,9 +661,9 @@ header>.navbar {
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  .btnSlide:before {
+}
+
+.btnSlide:before {
     position: absolute;
     content: "";
     height: 13px;
@@ -670,30 +673,31 @@ header>.navbar {
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  input:checked + .btnSlide {
+}
+
+input:checked+.btnSlide {
     background-color: #4E7C7E;
-  }
-  
-  input:focus + .btnSlide {
+}
+
+input:focus+.btnSlide {
     box-shadow: 0 0 1px #7ea6a8;
-  }
-  
-  input:checked + .btnSlide:before {
+}
+
+input:checked+.btnSlide:before {
     -webkit-transform: translateX(13px);
     -ms-transform: translateX(13px);
     transform: translateX(13px);
-  }
-  
-  /* Rounded sliders */
-  .btnSlide.round {
+}
+
+/* Rounded sliders */
+
+.btnSlide.round {
     border-radius: 34px;
-  }
-  
-  .btnSlide.round:before {
+}
+
+.btnSlide.round:before {
     border-radius: 50%;
-  }
+}
 
 .stock {
     visibility: hidden;
@@ -703,7 +707,6 @@ header>.navbar {
     padding: 10px;
     display: flex;
     flex-direction: column;
-
 }
 
 .nomitem {
@@ -714,12 +717,11 @@ header>.navbar {
     padding: 10px;
     display: flex;
     flex-direction: row;
-    
 }
 
 /* sidepanel */
 
-.myownsidepanel  {
+.myownsidepanel {
     width: 0;
     z-index: 2;
     box-sizing: content-box;
@@ -730,45 +732,46 @@ header>.navbar {
     transition: 0.5s;
     padding-top: 60px;
     border-bottom-right-radius: 10px;
-  }
-  .myownsidepanel a {
+}
+
+.myownsidepanel a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
     transition: 0.3s;
-  }
-  
-  .myownsidepanel a:hover {
+}
+
+.myownsidepanel a:hover {
     color: #f1f1f1;
-  }
-  
-  .myownsidepanel .closebtn {
+}
+
+.myownsidepanel .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
-  }
-  
-  .openbtn {
+}
+
+.openbtn {
     font-size: 20px;
     cursor: pointer;
     background-color: #668A87;
     color: white;
     padding: 10px 15px;
     border: none;
-  }
-  
-  .openbtn:hover {
-    background-color:#627779;
-  }
-
-.fondsidepanel {
-    background-color:#668A87 ;
 }
 
-/* Zoom */ 
+.openbtn:hover {
+    background-color: #627779;
+}
+
+.fondsidepanel {
+    background-color: #668A87;
+}
+
+/* Zoom */
 
 #overlay {
     border: 1px solid black;
@@ -788,7 +791,7 @@ header>.navbar {
     left: 40%;
 }
 
-.myAlert > .closebtn {
+.myAlert>.closebtn {
     color: #818181;
     text-decoration: none;
     font-size: 36px;
