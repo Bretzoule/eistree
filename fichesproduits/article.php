@@ -63,12 +63,12 @@ include($_SERVER['DOCUMENT_ROOT'] . '/includes/navbar.php');
                 </div>
             </div>
             <div class="entretienProduit">
-                <strong><?php if(isset($produit['arrosage'])) { echo 'Arrosage : ' . $produit['arrosage'];} ?></strong> <br>
-                <strong><?php if(isset($produit['luminosité'])) { echo 'Luminosité : ' . $produit['luminosité'];} ?></strong> <br>
-                <strong><?php if(isset($produit['température'])) { echo 'Température : ' . $produit['température'];} ?></strong> <br>
-                <strong><?php if(isset($produit['feuillage'])) { echo 'Feuillage : ' . $produit['feuillage'];} ?></strong> <br>
-                <strong><?php if(isset($produit['hauteur'])) { echo 'Hauteur : ' . $produit['hauteur'];} ?></strong> <br>
-                <strong><?php if(isset($produit['floraison'])) { echo 'Floraison : ' . $produit['floraison'];} ?></strong> <br>
+                <strong><?php if(isset($produit['arrosage'])) { echo 'Arrosage : ' . $produit['arrosage'] . "<br>";} ?></strong>
+                <strong><?php if(isset($produit['luminosité'])) { echo 'Luminosité : ' . $produit['luminosité'] . "<br>";} ?></strong> 
+                <strong><?php if(isset($produit['température'])) { echo 'Température : ' . $produit['température'] . " <br>";} ?></strong>
+                <strong><?php if(isset($produit['feuillage'])) { echo 'Feuillage : ' . $produit['feuillage'] . "<br>";} ?></strong> 
+                <strong><?php if(isset($produit['hauteur'])) { echo 'Hauteur : ' . $produit['hauteur'] . "<br>";} ?></strong>
+                <strong><?php if(isset($produit['floraison'])) { echo 'Floraison : ' . $produit['floraison'] . "<br>";} ?></strong>
             </div>
         </div>
     </div>
