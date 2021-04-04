@@ -1,8 +1,8 @@
 <?php
 $active = "panier";
 $title = "EISTree - Panier";
-include($_SERVER['DOCUMENT_ROOT'] . 'includes/header.php');
-include($_SERVER['DOCUMENT_ROOT'] . 'includes/navbar.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/includes/navbar.php');
 ?>
 <div id="page">
     <div class="px-4 px-lg-0">
@@ -98,5 +98,5 @@ include($_SERVER['DOCUMENT_ROOT'] . 'includes/navbar.php');
 </div>
 <script src="/js/panier.js"></script>
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . 'includes/footer.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php');
 ?>
