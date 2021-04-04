@@ -27,7 +27,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/navbar.php');
             <p class="petitTitreSection">Pages de compte :</p>
             <li> <a href="/login/login.php">Se connecter</a>
             </li>
-            <li> <a href="/account/account.php">Se connecter</a>
+            <li> <a href="/account/account.php">Mon compte</a>
+            </li>
+            <li> <a href="/login/confirmResetPW.php">J'ai oublié mon mot de passe</a>
             </li>
             <li> <a href="/register/register.php">S'enregistrer</a>
             </li>
