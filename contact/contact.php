@@ -20,14 +20,14 @@ function verif($text)
 }
 
 $_SESSION['datecontact'] = (isset($_POST["datecontact"])) ? verif($_POST["datecontact"]) : "";
-$_SESSION['nom'] = $_POST["nom"] = (isset($_POST["nom"])) ? verif($_POST["nom"]) : "";;
-$_SESSION['prenom'] = $_POST["prenom"] = (isset($_POST["prenom"])) ? verif($_POST["prenom"]) : "";;
-$_SESSION['email'] = $_POST["email"] = (isset($_POST["email"])) ? verif($_POST["email"]) : "";;
-$_SESSION['genre'] = $_POST["genre"] = (isset($_POST["genre"])) ? verif($_POST["genre"]) : "";;
-$_SESSION['naissance'] = $_POST["naissance"] = (isset($_POST["naissance"])) ? verif($_POST["naissance"]) : "";;
-$_SESSION['fonction'] = $_POST["fonction"] = (isset($_POST["fonction"])) ? verif($_POST["fonction"]) : "";;
-$_SESSION['sujet'] = $_POST["sujet"] = (isset($_POST["sujet"])) ? verif($_POST["sujet"]) : "";;
-$_SESSION['contenu'] = $_POST["contenu"] = (isset($_POST["contenu"])) ? verif($_POST["contenu"]) : "";;
+$_SESSION['nom'] = (isset($_POST["nom"])) ? verif($_POST["nom"]) : "";
+$_SESSION['prenom'] = (isset($_POST["prenom"])) ? verif($_POST["prenom"]) : "";
+$_SESSION['email'] = (isset($_POST["email"])) ? verif($_POST["email"]) : "";
+$_SESSION['genre'] = (isset($_POST["genre"])) ? verif($_POST["genre"]) : "";
+$_SESSION['naissance'] = (isset($_POST["naissance"])) ? verif($_POST["naissance"]) : "";
+$_SESSION['fonction'] = (isset($_POST["fonction"])) ? verif($_POST["fonction"]) : "";
+$_SESSION['sujet']  = (isset($_POST["sujet"])) ? verif($_POST["sujet"]) : "";
+$_SESSION['contenu'] = (isset($_POST["contenu"])) ? verif($_POST["contenu"]) : "";
 $destinataire = 'contact@eistree.eu';
 $envoyeur = 'From: ' . $_SESSION["email"];
 
@@ -74,6 +74,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     if ($booldate && $boolnom && $boolprenom && $boolemail && $boolemailvalide && $boolnaissance && $boolfonction && $boolsujet && $boolcontenu) {
         mail($destinataire, $_SESSION["sujet"], $_SESSION["contenu"], $envoyeur);
+        unset($_SESSION['datecontact']);
+        unset($_SESSION['nom']);
+        unset($_SESSION['prenom']);
+        unset($_SESSION['naissance']);
+        unset($_SESSION['email']);
+        unset($_SESSION['genre']);
+        unset($_SESSION['fonction']);
+        unset($_SESSION['sujet']);
+        unset($_SESSION['contenu']);
+        $_SESSION[''];
+        header('Location /index.php');
     }
 }
 ?>
@@ -87,59 +98,77 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <label for="datecontact">Date du contact</label> <br>
                         <input type="date" id="datecontact" name="datecontact" value='<?php echo $_SESSION["datecontact"] ?>' min="01/01/2021" max="01/01/2022" required />
                     </p>
-                    <span id='datecontactManquante'><?php echo $messagedate ?></span>
+                    <span class="couleurRouge" id='datecontactManquante'><?php echo $messagedate ?></span>
                     <p>
                         <label for="nom">Nom</label><br>
                         <input placeholder="Entrez votre nom" type="text" id="nom" name="nom" value='<?php echo $_SESSION["nom"] ?>' required />
                     </p>
-                    <span id='nomManquant'><?php echo $messagenom ?></span>
+                    <span class="couleurRouge" id='nomManquant'><?php echo $messagenom ?></span>
                     <p>
                         <label for="prenom">Prénom</label> <br>
                         <input placeholder="Entrez votre prénom" type="text" id="prenom" name="prenom" value='<?php echo $_SESSION["prenom"] ?>' required />
                     </p>
-                    <span id='prenomManquant'><?php echo $messageprenom ?></span>
+                    <span class="couleurRouge" id='prenomManquant'><?php echo $messageprenom ?></span>
                     <p>
                         <label for="email">Email</label> <br>
                         <input placeholder="monmail@monsite.org" type="text" id="email" name="email" value='<?php echo $_SESSION["email"] ?>' required />
                     </p>
-                    <span id='emailManquant'><?php if(!empty($messageemail)){echo $messageemail;} elseif(!empty($messageemailvalide)){echo $messageemailvalide;}?></span>
+                    <span class="couleurRouge" id='emailManquant'><?php if (!empty($messageemail)) {
+                                                                        echo $messageemail;
+                                                                    } elseif (!empty($messageemailvalide)) {
+                                                                        echo $messageemailvalide;
+                                                                    } ?></span>
                     <p id="genre">
                         <label>Genre</label> <br>
-                        <input type="radio" name="genre" value="femme" id="genref" required <?php if((isset($_SESSION["genre"]) && $_SESSION["genre"] === "femme") || empty($_SESSION["genre"])){echo 'checked="true"';} ?> required />
+                        <input type="radio" name="genre" value="femme" id="genref" required <?php if ((isset($_SESSION["genre"]) && $_SESSION["genre"] === "femme") || empty($_SESSION["genre"])) {
+                                                                                                echo 'checked="true"';
+                                                                                            } ?> required />
                         <label for="genref">Femme</label>
-                        <input type="radio" name="genre" value="homme" id="genreh" <?php if(isset($_SESSION["genre"]) && $_SESSION["genre"] === "homme"){echo 'checked="true"';} ?> required />
+                        <input type="radio" name="genre" value="homme" id="genreh" <?php if (isset($_SESSION["genre"]) && $_SESSION["genre"] === "homme") {
+                                                                                        echo 'checked="true"';
+                                                                                    } ?> required />
                         <label for="genreh">Homme</label>
-                        <input type="radio" name="genre" value="plante" id="genrep" <?php if(isset($_SESSION["genre"]) && $_SESSION["genre"] === "plante"){echo 'checked="true"';} ?> required />
+                        <input type="radio" name="genre" value="plante" id="genrep" <?php if (isset($_SESSION["genre"]) && $_SESSION["genre"] === "plante") {
+                                                                                        echo 'checked="true"';
+                                                                                    } ?> required />
                         <label for="genrep">Plante</label>
-                        <span id='genreManquant'><?php echo $messagegenre ?></span><br>
+                        <span class="couleurRouge" id='genreManquant'><?php echo $messagegenre ?></span><br>
                     </p>
                     <p>
                         <label for="naissance">Date de naissance</label><br>
                         <input type="date" id="naissance" name="naissance" value='<?php echo $_SESSION["naissance"] ?>' required />
                     </p>
-                    <span id='naissanceManquante'><?php echo $messagenaissance ?></span>
+                    <span class="couleurRouge" id='naissanceManquante'><?php echo $messagenaissance ?></span>
                     <p>
                         <label for="fonction">Fonction</label> <br>
                         <select name="fonction" id="fonction" required>
-                            <option <?php if(isset($_SESSION["fonction"]) && $_SESSION["fonction"] === "enseignant"){echo 'selected="true"';} ?> value="enseignant">Enseignant</option>
-                            <option <?php if(isset($_SESSION["fonction"]) && $_SESSION["fonction"] === "cadre"){echo 'selected="true"';} ?> value="cadre">Cadre</option>
-                            <option <?php if(isset($_SESSION["fonction"]) && $_SESSION["fonction"] === "jardinier"){echo 'selected="true"';} ?> value="jardinier">Jardinier</option>
-                            <option <?php if(isset($_SESSION["fonction"]) && $_SESSION["fonction"] === "autre"){echo 'selected="true"';} ?> value="autre">Autre</option>
+                            <option <?php if (isset($_SESSION["fonction"]) && $_SESSION["fonction"] === "enseignant") {
+                                        echo 'selected="true"';
+                                    } ?> value="enseignant">Enseignant</option>
+                            <option <?php if (isset($_SESSION["fonction"]) && $_SESSION["fonction"] === "cadre") {
+                                        echo 'selected="true"';
+                                    } ?> value="cadre">Cadre</option>
+                            <option <?php if (isset($_SESSION["fonction"]) && $_SESSION["fonction"] === "jardinier") {
+                                        echo 'selected="true"';
+                                    } ?> value="jardinier">Jardinier</option>
+                            <option <?php if (isset($_SESSION["fonction"]) && $_SESSION["fonction"] === "autre") {
+                                        echo 'selected="true"';
+                                    } ?> value="autre">Autre</option>
                         </select>
                     </p>
-                    <span id='fonctionManquante'><?php echo $messagefonction ?></span>
+                    <span class="couleurRouge" id='fonctionManquante'><?php echo $messagefonction ?></span>
                 </div>
                 <div class="contactPart">
                     <p>
                         <label>Objet</label> <br>
                         <input placeholder="Entrez le sujet de votre mail" type="text" id="sujet" name="sujet" value='<?php echo $_SESSION["sujet"] ?>' required />
                     </p>
-                    <span id="sujetManquant"><?php echo $messagesujet ?></span>
+                    <span class="couleurRouge" id="sujetManquant"><?php echo $messagesujet ?></span>
                     <p>
 
                         <textarea name="contenu" cols="30" rows="20" id="contenu" placeholder="Tapez ici votre mail" required><?php echo $_SESSION["contenu"] ?></textarea>
                     </p>
-                    <span id='contenuManquant'><?php echo $messagecontenu ?></span>
+                    <span class="couleurRouge" id='contenuManquant'><?php echo $messagecontenu ?></span>
                     <p>
                         <input id="specialSubmit" type="submit" value="Envoyer !" />
                     </p>
