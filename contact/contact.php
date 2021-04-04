@@ -98,11 +98,11 @@ include($_SERVER['DOCUMENT_ROOT'] . 'includes/navbar.php');
     if(isset($specialSubmit)){
         if(empty($datecontact))
         $message='<div class="erreur">Veuillez entrer la date de contact</div>';
-        elseif(empty($nom))
-        $message='<div class="erreur">Veuillez saisir votre nom</div>';
-        elseif(empty($prenom))
-        $message='<div class="erreur">Veuillez saisir votre prénom</div>';
-        elseif(empty($email))
+        elseif(empty($nom) && preg_match("^[A-Za-z '-]+$",$nom))
+        $message='<div class="erreur">Veuillez saisir un nom valide</div>';
+        elseif(empty($prenom) && preg_match("^[A-Za-z '-]+$",$prenom))
+        $message='<div class="erreur">Veuillez saisir votre prénom valide</div>';
+        elseif(empty($email) && preg_match("^#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#",$prenom))
         $message='<div class="erreur">Veuillez saisir votre email</div>';
         elseif(!filter_var($email, FILTER_VALIDATE_EMAIL))
         
