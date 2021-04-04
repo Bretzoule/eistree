@@ -83,8 +83,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         unset($_SESSION['fonction']);
         unset($_SESSION['sujet']);
         unset($_SESSION['contenu']);
-        $_SESSION[''];
-        header('Location /index.php');
+        $_SESSION['errorThrow'] = "mailEnvoye";
+        header('Location: /index.php');
+        exit();
     }
 }
 ?>
