@@ -45,3 +45,14 @@ Toujours sur la page produit, on peut zoomer sur l'image en passant la souris su
 
 Enfin, la page "Contact" a elle aussi été améliorée. Ainsi, le formulaire ne peut être envoyé si un des champs est vide et les champs des nom, prenom et e-mail bloquent l'envoi du formulaire s'ils ne sont pas conformes (format de l'e-mail, caractères spéciaux dans le nom ou le prénom par exemple).
 
+
+## Nouvelles fonctionnalités liées au php
+
+Première nouvelle : Toutes les pages produit sont désormais accessibles et on peut ajouter n'importe quel article au panier pourvu qu'il soit encore en stock!
+
+De plus, la page "Contact" a encore une fois été améliorée puisque les données sont maintenant vérifiées côté serveur, pour plus de sécurité.
+
+Il est aussi possible de créer un compte et de se connecter sur notre site pour gérer son panier.
+
+
+
