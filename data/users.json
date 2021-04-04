@@ -1,0 +1,14 @@
+{
+    "contact@eistree.eu": {
+        "uuid": "user_606a1e5abcbh7",
+        "nom": "Admin",
+        "prenom": "Eistree",
+        "passwd": "$2y$10$xIwyASVrQOTWkTArjzBxd.EfC7SwYRd4DR8E71H7xIwu6b8fefWhO"
+    },
+    "oui@oui.fr": {
+        "uuid": "user_606a1e5abcb8d",
+        "nom": "ZJDIOJ",
+        "prenom": "oijfdeziojdio",
+        "passwd": "$2y$10$hjnUwVD026VacR1PLqWy..ZHI8kotTNy9LRLVINlP2LZaRCxiMXpK"
+    }
+}
