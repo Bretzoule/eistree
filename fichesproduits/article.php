@@ -55,9 +55,11 @@ if (isset($produit)) {?>
             </div>
         </div>
         <div class="entretienProduit">
-            <strong>Arrosage :</strong> <br>
-            <strong>Luminosité :</strong> <br>
-            <strong>Température :</strong> <br>
+            <strong>Arrosage :<?php echo $produit['arrosage'] ?></strong> <br>
+            <strong>Luminosité :<?php echo $produit['luminosité'] ?></strong> <br>
+            <strong>Température :<?php echo $produit['température'] ?></strong> <br>
+            <strong>Feuillage :<?php echo $produit['feuillage'] ?></strong> <br>
+            <strong>Floraison :<?php echo $produit['floraison'] ?></strong> <br>
         </div>
     </div>
 <?php 
