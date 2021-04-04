@@ -28,7 +28,7 @@ if (isset($_SESSION['errorThrow'])) {
             echo banner('alert-warning', 'Impossible !', 'Stock insuffisant !');
             break;
         case 'unknownUser':
-            echo banner('alert-danger', 'Oops...', 'Identifiant ou mot de passe incorrect.');
+            echo banner('alert-warning', 'Oops...', 'Identifiant ou mot de passe incorrect.');
             break;
         case 'alreadyloggedin':
             echo banner('alert-warning', 'Impossible !', 'Vous êtes déjà connecté !');
@@ -39,8 +39,23 @@ if (isset($_SESSION['errorThrow'])) {
         case 'loggedOut':
             echo banner('alert-success', 'Déconnecté !', 'Vous vous êtes déconnecté avec succès.');
             break;
+        case 'mailEnvoye':
+            echo banner('alert-success', 'Envoyé !', 'Votre mail à été envoyé à notre équipe !');
+            break;
+        case 'alreadyExists':
+            echo banner('alert-warning', 'Oops !', 'Un compte existe déjà avec cet email.');
+            break;
+        case 'registeredSuccessfully':
+            echo banner('alert-success', 'All green !', 'Votre compte à été créé !');
+            break;
+        case 'doesntExist':
+            echo banner('alert-warning', 'Red flag !', 'Il n\'existe aucun compte avec cet email.');
+            break;
+        case 'pwChanged':
+            echo banner('alert-success', 'All green !', 'Mot de passe changé avec succès.');
+            break;
         default:
-            echo banner('alert-warning', 'Erreur !', 'Erreur inconnue...');
+            echo banner('alert-danger', 'Erreur !', 'Erreur inconnue...');
             break;
     }
     unset($_SESSION['errorThrow']);
