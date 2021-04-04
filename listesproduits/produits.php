@@ -1,7 +1,7 @@
 <?php
 $active = "produits";
 $title = "EISTree - ";
-include($_SERVER['DOCUMENT_ROOT'] . 'includes/varSession.inc.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/includes/varSession.inc.php');
 if (isset($_GET['cat'])) {
     switch (htmlspecialchars($_GET['cat'])) {
         case 'arbustes':
@@ -84,5 +84,5 @@ include($_SERVER['DOCUMENT_ROOT'] . '/includes/navbar.php');
 </div>
 <script src="/js/listesproduits.js"></script>
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . 'includes/footer.php');
+include($_SERVER['DOCUMENT_ROOT'].'/includes/footer.php');
 ?>

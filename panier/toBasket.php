@@ -12,11 +12,11 @@ if(isset($_POST['nom']) && isset($_POST['prix']) && isset($_POST['img']) && isse
     } else {
         $_SESSION['panier'][$id] = array(htmlspecialchars($_POST['nom']),htmlspecialchars($_POST['img']),htmlspecialchars($_POST['prix']),htmlspecialchars(intval($_POST['amount'],10)),  htmlspecialchars(intval($_POST['stock'],10)), htmlspecialchars($_POST['id']));
     }
-    $_SESSION['ajoutProduitSuccess'] = true;
-    // print_r($_SESSION['panier']);
+    $_SESSION['errorThrow'] = 'ajoutProduitSuccess';
     header('Location: /fichesproduits/article.php?id='. htmlspecialchars($_POST['id']));
+    exit();
 } else {
-    $_SESSION['erreurAjoutProduit'] = true;
+    $_SESSION['errorThrow'] = 'erreurAjoutProduit';
     header('Location: /listesproduits/produits.php');
 }
 ?>

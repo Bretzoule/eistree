@@ -6,7 +6,7 @@ if(isset($_GET['id']) && isset($_SESSION['panier'][htmlspecialchars($_GET['id'])
         if ($_SESSION['panier'][$id][3] < $_SESSION['panier'][$id][4]) {
             $_SESSION['panier'][$id][3]++;
         } else {
-            $_SESSION['stockError'] = true;
+            $_SESSION['errorThrow'] = 'stockError';
         }
     } elseif (isset($_GET['moins'])) {
         if ($_SESSION['panier'][$id][3] > 1) {
@@ -17,10 +17,10 @@ if(isset($_GET['id']) && isset($_SESSION['panier'][htmlspecialchars($_GET['id'])
     } elseif (isset($_GET['suppr'])) {
         unset($_SESSION['panier'][$id]);
     } else {
-        $_SESSION['missingArguments'] = true;
+        $_SESSION['errorThrow'] = 'missingArguments';
     }
 } else {
-    $_SESSION['missingArguments'] = true;
+    $_SESSION['errorThrow'] = 'missingArguments';
 } 
 header('Location: /panier/panier.php');
 ?>

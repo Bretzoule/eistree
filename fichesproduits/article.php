@@ -2,7 +2,7 @@
 $active = "produits";
 $title = "EISTree - ";
 $addtitle = "";
-include($_SERVER['DOCUMENT_ROOT'] . 'includes/varSession.inc.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/includes/varSession.inc.php');
 if (isset($_GET['id'])) {
     $id = htmlspecialchars($_GET['id']);
     if (array_key_exists($_GET['id'], $articlesArbustes)) {
@@ -78,5 +78,5 @@ include($_SERVER['DOCUMENT_ROOT'] . '/includes/navbar.php');
 </div>
 <script src="/js/ficheproduit.js"></script>
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . 'includes/footer.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php');
 ?>

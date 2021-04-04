@@ -2,7 +2,7 @@
 $active = "register";
 $title = "EISTree - Créer un compte.";
 include($_SERVER['DOCUMENT_ROOT'].'/includes/header.php');
-include($_SERVER['DOCUMENT_ROOT'].'includes/navbar.php');
+include($_SERVER['DOCUMENT_ROOT'].'/includes/navbar.php');
 ?>
 <div id="page">
     <div id="centerPanel">

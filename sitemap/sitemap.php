@@ -12,15 +12,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/navbar.php');
             <li><a href="/index.php">Accueil</a></li>
             <li><a href="/listesproduits/produits.php">Nos produits</a></li>
             <ul>
-                <li><a href="/listesproduits/arbustes.html">Arbustes (remplacé par recherche PHP dans le futur)</a>
+                <li><a href="/listeproduits/produits.php?cat=arbustes">Arbustes</a>
                 </li>
-                <li> <a href="/listesproduits/plantesfleuries.html">Plantes Fleuries (remplacé par recherche PHP
-                        dans le futur)</a></li>
-                <li><a href="/listesproduits/plantesinterieur.html">Plantes d'Interieur (remplacé par recherche PHP
-                        dans le futur)</a></li>
+                <li> <a href="/listeproduits/produits.php?cat=arbustes">Plantes Fleuries</a></li>
+                <li><a href="/listesproduits/plantesinterieur.html">Plantes d'Interieur</a></li>
                 <ul>
-                    <li><a href="/fichesproduits/monstera.html">Fiche produit Monstera (remplacé par requete PHP
-                            dans le futur)</a></li>
+                    <li><a href="/fichesproduits/articles.php?id=citronnier">Fiches produits (Ici Citronnier)</a></li>
                 </ul>
             </ul>
             <li> <a href="/panier/panier.php">Panier</a>
@@ -30,11 +27,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/includes/navbar.php');
             <p class="petitTitreSection">Pages de compte :</p>
             <li> <a href="/login/login.php">Se connecter</a>
             </li>
+            <li> <a href="/account/account.php">Se connecter</a>
+            </li>
             <li> <a href="/register/register.php">S'enregistrer</a>
             </li>
         </ul>
     </div>
 </div>
 <?php
-include($_SERVER['DOCUMENT_ROOT'].'includes/footer.php');
+include($_SERVER['DOCUMENT_ROOT'].'/includes/footer.php');
 ?>

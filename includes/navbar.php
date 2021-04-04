@@ -12,12 +12,13 @@
                 <a href="/listesproduits/produits.php?cat=plantesI">Plantes d'intérieur &#x1F335;</a>
             </div>
         </li>
-        <li><a class="<?php if (in_array($active, array('compte', 'register', 'login'))) {
+        <li><a class="<?php if (in_array($active, array('account', 'register', 'login'))) {
                             echo "active";
-                        } ?>" href="/login/login.php">Mon Compte</a></li>
+                        } ?>" <?php if (isset($_SESSION['user'])) { echo 'href="/account/account.php"> Mon Compte'; } else { echo 'href="/login/login.php"> Se Connecter'; }?> </a></li>
         <li><a class="<?php if ($active === "contact") {
                             echo "active";
                         } ?>" href="/contact/contact.php">Contact</a></li>
+                        <?php if (isset($_SESSION['user'])) { echo '<li id="panier"><a href="/login/logout.php">Déconnexion</a></li>';}?>
         <li id="panier"><a href="/panier/panier.php">Panier</a></li>
         <li class="formulaireee">
             <form action="" method="get"><input class="searchbar" name="recherche" type="text" value="" onkeyup="" placeholder="(Recherche.....)" />
