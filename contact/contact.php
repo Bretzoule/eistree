@@ -1,8 +1,8 @@
 <?php
 $title ="EISTree - Contact.";
 $active = "contact";
-include($_SERVER['DOCUMENT_ROOT'] . 'includes/header.php');
-include($_SERVER['DOCUMENT_ROOT'] . 'includes/navbar.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/includes/navbar.php');
 ?>
     <div id="page">
         <div id="centerPanel">
