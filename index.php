@@ -23,10 +23,10 @@ include('includes/navbar.php');
                 <div class="addressInLabel"><a href="/fichesproduits/article.php?id=hibiscus">Hibiscus</a></div>
             </label>
             <label for="s4" id="slide4">
-                <div class="addressInLabel"><a href="/fichesproduits/article.php?id=chamaedora">Chamaedora</a></div>
+                <div class="addressInLabel"><a href="/fichesproduits/article.php?id=chamaedorea">Chamaedorea</a></div>
             </label>
             <label for="s5" id="slide5">
-                <div class="addressInLabel"><a href="/fichesproduits/article.php?id=scindapsusaureus">Pothos</a></div>
+                <div class="addressInLabel"><a href="/fichesproduits/article.php?id=epipremnumaureum">Pothos</a></div>
             </label>
         </section>
     </div>
