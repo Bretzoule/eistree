@@ -9,7 +9,6 @@
             "hauteur":"6 mètres",
             "température":"Jusqu'à -15°C",
             "feuillage":"Caduc",
-            "floraison":"-",
             "stock": "100"
         },
         "citronnier": {
@@ -21,7 +20,6 @@
             "hauteur":"3 à 5 mètres",
             "température": "Jusqu'à 3°C",
             "feuillage":"Persistant",
-            "floraison":"-",
             "stock": "100"
         },
         "rincebouteille": {
@@ -47,8 +45,6 @@
             "arrosage":"3x/semaine en été, 1x/semaine en hiver",
             "luminosité":"Lumière vive sans soleil ou mi-ombre",
             "température":"Entre 13°C et 25°C",
-            "floraison":"-",
-            "feuillage":"-",
             "stock": "100"
         },
         "monsteradeliciosa": {
@@ -60,8 +56,6 @@
             "arrosage":"1x/semaine, à espacer en hiver",
             "luminosité":"Tout type de luminosité",
             "température": "Entre 13°C et 25°C",
-            "floraison":"-",
-            "feuillage":"-",
             "stock": "100"
         },
         "epipremnumaurem": {
@@ -73,8 +67,6 @@
             "arrosage":"2x/semaine en été, 1x/semaine en hiver",
             "luminosité":"Lumière vive sans soleil ou mi-ombre",
             "température": "Entre 16°C et 22°C",
-            "floraison":"-",
-            "feuillage":"-",
             "stock": "100"
         }
     },

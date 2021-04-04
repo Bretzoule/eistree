@@ -63,11 +63,11 @@ include($_SERVER['DOCUMENT_ROOT'] . '/includes/navbar.php');
                 </div>
             </div>
             <div class="entretienProduit">
-                <strong>Arrosage :<?php echo $produit['arrosage'] ?></strong> <br>
-                <strong>Luminosité :<?php echo $produit['luminosité'] ?></strong> <br>
-                <strong>Température :<?php echo $produit['température'] ?></strong> <br>
-                <strong>Feuillage :<?php echo $produit['feuillage'] ?></strong> <br>
-                <strong>Floraison :<?php echo $produit['floraison'] ?></strong> <br>
+                <strong>Arrosage :<?php if(isset($produit['arrosage'])) { echo $produit['arrosage'];} ?></strong> <br>
+                <strong>Luminosité :<?php if(isset($produit['luminosité'])) { echo $produit['luminosité'];} ?></strong> <br>
+                <strong>Température :<?php if(isset($produit['température'])) { echo $produit['température'];} ?></strong> <br>
+                <strong>Feuillage :<?php if(isset($produit['feuillage'])) { echo $produit['feuillage'];} ?></strong> <br>
+                <strong>Floraison :<?php if(isset($produit['floraison'])) { echo $produit['floraison'];} ?></strong> <br>
             </div>
         </div>
     </div>
