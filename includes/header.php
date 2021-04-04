@@ -1,16 +1,5 @@
 <?php
 session_start();
-
-
-function banner($alert, $pretext, $text)
-{
-    return '<div onload ="autoremove(this)" class="alert ' . $alert . ' float alert-dismissible position-absolute myAlert">
-    <strong>' . $pretext . '</strong> ' . $text . '.
-    <a href="#" class="closebtn" data-dismiss="alert">×</a>
-    </div>';
-}
-
-
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -26,7 +15,7 @@ function banner($alert, $pretext, $text)
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/index.css">
     <?php
     if (in_array($active, array("contact", "register", "login"))) {
@@ -40,22 +29,6 @@ function banner($alert, $pretext, $text)
 
 <body>
     <header id="mainheader">
-        <?php
-
-                            /*  Gestion d'erreurs  */ 
-
-        if (isset($_SESSION['ajoutProduitSuccess']) && $_SESSION['ajoutProduitSuccess']) {
-            echo banner('alert-success', 'Au panier !', 'Produit ajouté avec succès');
-            unset($_SESSION['ajoutProduitSuccess']);
-        } else if (isset($_SESSION['erreurAjoutProduit']) && $_SESSION['erreurAjoutProduit']) {
-            echo banner('alert-warning', 'Erreur !', 'Impossible d\'ajouter l\'article au panier...');
-            unset($_SESSION['erreurAjoutProduit']);
-        } elseif (isset($_SESSION['missingArguments']) && $_SESSION['missingArguments']) {
-            echo banner('alert-warning', 'Eh !', 'Vous ne pouvez pas faire ça...');
-            unset($_SESSION['missingArguments']);
-        } elseif (isset($_SESSION['stockError']) && $_SESSION['stockError']) {
-            echo banner('alert-warning', 'Impossible !', 'Stock insuffisant !');
-            unset($_SESSION['stockError']);
-        } ?>
+        <?php include($_SERVER['DOCUMENT_ROOT'] .'/includes/errorbanners.php');?>
         <a href="/index.php"><img id="logoTopDroit" src="/assets/textlogo.png" alt="fleur"></a>
     </header>
