@@ -145,12 +145,11 @@ VALUES (
 --
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
-  `mail` varchar(89)
-  SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `mail` varchar(89),
     `uuid` text NOT NULL,
     `nom` text NOT NULL,
     `prenom` text NOT NULL,
-    `pass` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+    `pass` text NOT NULL,
     PRIMARY KEY (`mail`)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci;
 --
