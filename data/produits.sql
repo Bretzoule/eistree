@@ -160,7 +160,7 @@ VALUES (
     'Epipremnum Aureum',
     '/images/pothos.jpg ',
     8,
-    ' Plante grimpante très facile d''entretien, le pothos est la plante idéale pour les débutants. <br> Attention à ne pas en planter dans votre jardin si vous habitez en Floride, car c''est une plante invasive dans cette région.'
+    ' Plante grimpante très facile d''entretien, le pothos est la plante idéale pour les débutants. <br> Attention à ne pas en planter dans votre jardin si vous habitez en Floride, car c''est une plante invasive dans cette région.',
     NULL,
     'Entre 16°C et 22°C',
     NULL,
@@ -175,7 +175,7 @@ VALUES (
     'Hibiscus Syriacus',
     '/images/hibiscus.jpg ',
     40,
-    'L''hibiscus est un genre d''arbuste de la famille des Malvaceae. En grec, le terme hibiscus signifie "Guimauve".'
+    'L''hibiscus est un genre d''arbuste de la famille des Malvaceae. En grec, le terme hibiscus signifie "Guimauve".',
     NULL,
     'Jusqu''à -15°C',
     'Caduc',
@@ -190,7 +190,7 @@ VALUES (
     'Strelitzia Reginae',
     '/images/strelitzia.jpg ',
     35,
-    'Le strelitzia est une plante vivace tropicale d''origine sud-africaine pouvant atteindre 6m de hauteur.'
+    'Le strelitzia est une plante vivace tropicale d''origine sud-africaine pouvant atteindre 6m de hauteur.',
     NULL,
     'Jusqu''à -15°C',
     'Persistant',
@@ -205,7 +205,7 @@ VALUES (
     'Bougainvillea Glabra',
     '/images/bougainvillier.jpg ',
     28,
-    'Originaire du Brésil, le bougainvillier apporte une touche méditerranéenne à n''importe quel jardin.'
+    'Originaire du Brésil, le bougainvillier apporte une touche méditerranéenne à n''importe quel jardin.',
     NULL,
     'Pas moins de 5°C',
     'Persistant',
