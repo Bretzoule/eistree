@@ -22,6 +22,12 @@ if (isset($_SESSION['errorThrow'])) {
         case 'erreurAjoutProduit':
             echo banner('alert-warning', 'Erreur !', 'Impossible d\'ajouter l\'article au panier...');
             break;
+        case 'erreurCommande':
+            echo banner('alert-warning', 'Erreur !', 'Impossible de commander ces articles, merci de refaire votre panier.');
+            break;
+        case 'erreurCommande':
+            echo banner('alert-success', 'Parfait !', 'Votre commande est entre nos mains :)');
+            break;
         case 'missingArguments':
             echo banner('alert-warning', 'Eh !', 'Vous ne pouvez pas faire ça...');
             break;
@@ -62,5 +68,7 @@ if (isset($_SESSION['errorThrow'])) {
             echo banner('alert-danger', 'Erreur !', 'Erreur inconnue...');
             break;
     }
-    if(isset($_SESSION['errorThrow'])) {unset($_SESSION['errorThrow']);};
+    if (isset($_SESSION['errorThrow'])) {
+        unset($_SESSION['errorThrow']);
+    };
 }
