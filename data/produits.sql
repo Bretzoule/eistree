@@ -127,7 +127,7 @@ VALUES (
     'rincebouteille',
     'Rince Bouteille',
     'Callistemon Citrinus',
-    '/images/rincebouteille.jpg ',
+    '/images/rincebouteille.jpg',
     40,
     ' Fleurissant l''été, le callistemon -ou rince-bouteille- peut être planté en pleine terre uniquement dans les régions au climat doux.',
     '1 à 3 mètres',
@@ -138,12 +138,12 @@ VALUES (
     NULL,
     100,
     1
-  )
+  ),
   (
     'monsteradeliciosa',
     'Monstera',
     'Monstera Deliciosa',
-    '/images/monstera.jpg ',
+    '/images/monstera.jpg',
     12,
     ' La monstera, ou faux philodendron, est une plante vivace de la famille des Araceae. <br> Facile d''entretien, cette plante est idéale pour décorer la maison.',
     NULL
@@ -154,7 +154,7 @@ VALUES (
     'Tout type de luminosité',
     100,
     3
-  )
+  ),
   ('epipremnumaureum',
     'Pothos',
     'Epipremnum Aureum',
@@ -169,7 +169,7 @@ VALUES (
     'Lumière vive sans soleil ou mi-ombre',
     100,
     3
-  )
+  ),
   ('hibiscus',
     'Hibiscus',
     'Hibiscus Syriacus',
@@ -184,7 +184,7 @@ VALUES (
     NULL,
     100,
     2
-  )
+  ),
   ('strelitzia',
     'Strelitzia',
     'Strelitzia Reginae',
@@ -199,7 +199,7 @@ VALUES (
     NULL,
     100,
     2
-  )
+  ),
   ('bougainvillier',
     'Bougainvillier',
     'Bougainvillea Glabra',
