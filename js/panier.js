@@ -48,9 +48,9 @@ function updateCart() {
         subElement.push(quantity * parseFloat(item.textContent));
         totalQuantity += quantity;
     }
-    sousTotal.textContent = (subElement.reduce((a, b) => a + b, 0)).toFixed(2);
-    expedition.textContent = (2.99 * totalQuantity).toFixed(2);
-    taxes.textContent = ((5.0 / 100) * parseFloat(sousTotal.textContent)).toFixed(2);
-    total.textContent = (parseFloat(expedition.textContent) + parseFloat(sousTotal.textContent) + parseFloat(taxes.textContent)).toFixed(2);
+    sousTotal.textContent = (subElement.reduce((a, b) => a + b, 0)).toFixed(2) + "€";
+    expedition.textContent = (2.99 * totalQuantity).toFixed(2) + "€";
+    taxes.textContent = ((5.0 / 100) * parseFloat(sousTotal.textContent)).toFixed(2) + "€";
+    total.textContent = (parseFloat(expedition.textContent) + parseFloat(sousTotal.textContent) + parseFloat(taxes.textContent)).toFixed(2) + "€";
 }
 
