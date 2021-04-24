@@ -89,7 +89,7 @@ VALUES (
     NULL,
     'Lumière vive sans soleil ou mi-ombre',
     100,
-    2
+    3
   ),
   (
     'citronnier',
@@ -138,7 +138,84 @@ VALUES (
     NULL,
     100,
     1
+  )
+  (
+    'monsteradeliciosa',
+    'Monstera',
+    'Monstera Deliciosa',
+    '/images/monstera.jpg ',
+    12,
+    ' La monstera, ou faux philodendron, est une plante vivace de la famille des Araceae. <br> Facile d''entretien, cette plante est idéale pour décorer la maison.',
+    NULL
+    'Entre 13°C et 25°C',
+    NULL,
+    '1x/semaine, à espacer en hiver',
+    NULL,
+    'Tout type de luminosité',
+    100,
+    3
+  )
+  ('epipremnumaureum',
+    'Pothos',
+    'Epipremnum Aureum',
+    '/images/pothos.jpg ',
+    8,
+    ' Plante grimpante très facile d''entretien, le pothos est la plante idéale pour les débutants. <br> Attention à ne pas en planter dans votre jardin si vous habitez en Floride, car c''est une plante invasive dans cette région.'
+    NULL
+    'Entre 16°C et 22°C',
+    NULL,
+    '2x/semaine en été, 1x/semaine en hiver',
+    NULL,
+    'Lumière vive sans soleil ou mi-ombre',
+    100,
+    3
+  )
+  ('hibiscus',
+    'Hibiscus',
+    'Hibiscus Syriacus',
+    '/images/hibiscus.jpg ',
+    40,
+    'L''hibiscus est un genre d''arbuste de la famille des Malvaceae. En grec, le terme hibiscus signifie "Guimauve".'
+    NULL
+    'Jusqu''à -15°C',
+    'Caduc',
+    NULL,
+    'De Juillet à Septembre',
+    NULL,
+    100,
+    2
+  )
+  ('strelitzia',
+    'Strelitzia',
+    'Strelitzia Reginae',
+    '/images/strelitzia.jpg ',
+    35,
+    'Le strelitzia est une plante vivace tropicale d''origine sud-africaine pouvant atteindre 6m de hauteur.'
+    NULL
+    'Jusqu''à -15°C',
+    'Persistant',
+    NULL,
+    'De Juin à Juillet',
+    NULL,
+    100,
+    2
+  )
+  ('bougainvillier',
+    'Bougainvillier',
+    'Bougainvillea Glabra',
+    '/images/bougainvillier.jpg ',
+    28,
+    'Originaire du Brésil, le bougainvillier apporte une touche méditerranéenne à n''importe quel jardin.'
+    NULL
+    'Pas moins de 5°C',
+    'Persistant',
+    NULL,
+    'De Mai à Novembre',
+    NULL,
+    100,
+    2
   );
+
 -- --------------------------------------------------------
 --
 -- Structure de la table `users`
