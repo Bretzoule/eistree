@@ -131,6 +131,7 @@ li.mydropdown {
     min-width: 100%;
     height: 100%;
     background: #F8F8F4;
+    min-height: calc(100vh - 601px);
 }
 
 /* #page #sidePanelLeft {
@@ -151,7 +152,7 @@ li.mydropdown {
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: calc(100vh - 631px);
+    min-height: calc(100vh - 601px);
 }
 
 #mainTitle {
