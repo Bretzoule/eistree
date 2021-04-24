@@ -43,7 +43,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/includes/navbar.php');
                                                 </div>
                                             </div>
                                         </th>
-                                        <td class="align-middle price"><strong><?php echo $value[2] ?></strong></td>
+                                        <td class="align-middle price"><strong><?php echo $value[2] ?>€</strong></td>
                                         <td class="align-middle">
                                             <div class="input-group w-50">
                                                 <span class="input-group-btn">

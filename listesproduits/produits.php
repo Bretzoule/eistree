@@ -1,28 +1,29 @@
 <?php
 $active = "produits";
 $title = "EISTree - ";
-include($_SERVER['DOCUMENT_ROOT'] . '/includes/varSession.inc.php');
+
+require($_SERVER['DOCUMENT_ROOT'] . "/db/categoryQuery.php");
+$connexion = connectDB();
 if (isset($_GET['cat'])) {
-    switch (htmlspecialchars($_GET['cat'])) {
+    $catID = htmlspecialchars($_GET['cat']);
+    switch ($catID) {
         case 'arbustes':
             $addtitle = "Nos arbustes &#x1F333;.";
-            $produits = $articlesArbustes;
             break;
         case 'plantesf':
             $addtitle = "Nos plantes fleuries &#x1F33A;.";
-            $produits = $articlesPlantesFleuries;
             break;
         case 'plantesI':
             $addtitle = "Nos plantes d'intérieur &#x1F335;";
-            $produits = $articlesPlantesInterieur;
             break;
         default:
             $addtitle = "Catégorie inconnue.";
             break;
     }
+    $data = getCategory($connexion, $catID);
 } else {
     $addtitle = "Nos produits.";
-    $produits = array_merge(array_merge($articlesArbustes,$articlesPlantesFleuries),$articlesPlantesInterieur);
+    $data = queryAll($connexion);
 }
 $title .= $addtitle;
 include($_SERVER['DOCUMENT_ROOT'] . '/includes/header.php');
@@ -42,6 +43,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/includes/navbar.php');
                     </label>
                 </div>
             </div>
+            
         </div>
     </div>
     <div class='fondsidepanel'>
@@ -49,21 +51,21 @@ include($_SERVER['DOCUMENT_ROOT'] . '/includes/navbar.php');
     </div>
     <div id="centerPanel">
         <?php
-        if (isset($produits)) {
+        if (isset($data) and !empty($data)) {
             $index = 0;
-            foreach ($produits as $key => $item) {
+            foreach ($data as $item) {
                 if ($index == 0) {
                     echo '<section class="products">';
                 }
                 $index++;
                 echo '<div class="product-card">
-                        <a href="/fichesproduits/article.php?id='. $key .' ">
+                        <a href="/fichesproduits/article.php?id='. $item['id'] .' ">
                         <div class="product-image">
                             <img src="'. $item['img']. '">
                         </div>
                         <div class="product-info">
                             <p> ' . $item['nomscien'] . '</p>
-                            <p>'. $item['prix'].'</p>
+                            <p>'. $item['prix'].'€</p>
                             <p class="stock">Stock : '. $item['stock'] .'</p>
                         </div>
                     </a>
@@ -77,7 +79,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/includes/navbar.php');
                 echo '</section>';
             }
         } else {
-            echo "<div> Oops, cette catégorie n'existe pas !</div>";
+            echo "<div> Oops, cette catégorie n'existe pas, ou aucun article n'est disponible !</div>";
         }
         ?>
     </div>
