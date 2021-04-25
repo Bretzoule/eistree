@@ -2,7 +2,7 @@
 session_start();
 if(isset($_POST['nom']) && isset($_POST['prix']) && isset($_POST['img']) && isset($_POST['amount']) && isset($_POST['id']) && 
     isset($_POST['stock']) && (intval($_POST['amount'],10) > 0) && 
-    (intval($_POST['stock'],10) > intval($_POST['amount']))) {
+    (intval($_POST['stock'],10) >= intval($_POST['amount']))) {
     if (!isset($_SESSION['panier'])) {
     $_SESSION['panier'] = array();
     }
