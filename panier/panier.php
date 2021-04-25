@@ -87,7 +87,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/includes/navbar.php');
                                 <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
                                     <h5 class="font-weight-bold" id="total"></h5>
                                 </li>
-                            </ul><a href="#" class="btn btn-dark rounded-pill py-2 btn-block">Passer au
+                            </ul><a href="#" onclick="commander();" class="btn btn-dark rounded-pill py-2 btn-block">Passer au
                                 paiement</a>
                         </div>
                     </div>

@@ -3,27 +3,27 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-
+header('Content-type:application/json;charset=utf-8');
 if (isset($_SESSION['panier']) && !empty($_SESSION['panier'])) {
-    $erreur = false;
     $validArticleCounter = 0;
     require($_SERVER['DOCUMENT_ROOT'] . '/db/orderQuery.php');
     $connexion = connectDB();
     foreach ($_SESSION['panier'] as $key => $value) {
-        $validArticleCounter += (validArticle($connexion, $key, $value[4])) ? 1 : 0;
+        $validArticleCounter += (validArticle($connexion, $key, $value[3])) ? 1 : 0;
     }
     if ($validArticleCounter === count($_SESSION['panier'])) {
         foreach ($_SESSION['panier'] as $key => $value) {
             $connexion = connectDB();
-            editStock($connexion, $key, $value);
+            editStock($connexion, $key, $value[3]);
         }
-        $_SESSION['errorThrow'] = 'succesCommande';
+        $message = ['alert-success','Parfait !', 'Votre commande est entre nos mains :)'];
+        
     } else {
-        $_SESSION['errorThrow'] = 'erreurCommande';
+        $message = ['alert-warning','Erreur !', 'Vous ne pouvez pas commander ces articles... merci de refaire votre panier.'];
     }
     unset($_SESSION['panier']);
-    header('Location: /login/login.php');
+    echo json_encode($message);
 } else {
-    $_SESSION['errorThrow'] = 'missingArguments';
-    header('Location: /index.php');
+    $message = ['alert-warning','Eh !', 'Vous ne pouvez pas faire ça, votre panier semble vide...'];
+    echo json_encode($message);
 }

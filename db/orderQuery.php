@@ -1,12 +1,11 @@
 <?php 
 
 require($_SERVER['DOCUMENT_ROOT'] . "/db/dbConnexionManagement.php");
-function getMailUser($connexion, $userMail)
+function validArticle($connexion, $productID, $quantity)
 {
-    $myKeyword = "%" . $userMail . "%";
-    $usersSql = "SELECT mail from users where mail LIKE :mail";
+    $usersSql = "SELECT stock from produits where id = :id";
     $dataUsers = $connexion->prepare($usersSql);
-    $dataUsers->bindParam(':mail', $myKeyword);
+    $dataUsers->bindParam(':id', $productID);
     $dataUsers->execute();
     if (!$dataUsers) {
         $_SESSION['errorThrow'] = 'dataBaseError';
@@ -14,27 +13,35 @@ function getMailUser($connexion, $userMail)
     } else {
         $data = $dataUsers->fetch();
         disconnectDB($connexion, array($dataUsers));
-        return(empty($data));
-    }
+        return($data >= $quantity);
+    } 
 }
 
 function editStock($connexion, $id, $quantity)
 {
-
-    $usersSql = "UPDATE products SET stock = ((SELECT stock from products WHERE id = :id) - :quantity) WHERE mail = :mail";
-    $dataUsers = $connexion->prepare($usersSql);
-    $dataUsers->bindParam(':mail', $userMail);
-    $dataUsers->bindParam(':pw', $newPw);
-    $dataUsers->execute();
-    if (!$dataUsers) {
+    $stockSql = "SELECT stock from produits where id = :id";
+    $dataStock = $connexion->prepare($stockSql);
+    $dataStock->bindParam(':id', $id);
+    $dataStock->execute();
+    if (!$dataStock) {
         $_SESSION['errorThrow'] = 'dataBaseError';
-        disconnectDB($connexion, array($dataUsers));
-        unsetAll();
-        header('Location: /index.php');
+        disconnectDB($connexion, array($dataStock));
     } else {
-        $data = $dataUsers->fetch();
-        disconnectDB($connexion, array($dataUsers));
-        return (empty($data));
+        $tmpValue = intval($dataStock->fetch()['stock'],10);
+        $value = $tmpValue - $quantity;
+        $upstockSql = "UPDATE produits SET stock = :value WHERE id = :id";
+        $dataUpStock = $connexion->prepare($upstockSql);
+        $dataUpStock->bindParam(':id', $id);
+        $dataUpStock->bindParam(':value', $value);
+        $dataUpStock->execute();
+        if (!$dataUpStock) {
+            $_SESSION['errorThrow'] = 'dataBaseError';
+            disconnectDB($connexion, array($dataUpStock, $dataStock));
+            unsetAll();
+            header('Location: /index.php');
+        } else {
+            disconnectDB($connexion, array($dataUpStock, $dataStock));
+        }
     }
 }
 
