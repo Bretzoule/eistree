@@ -25,7 +25,7 @@ if (isset($_SESSION['errorThrow'])) {
         case 'erreurCommande':
             echo banner('alert-warning', 'Erreur !', 'Impossible de commander ces articles, merci de refaire votre panier.');
             break;
-        case 'erreurCommande':
+        case 'succesCommande':
             echo banner('alert-success', 'Parfait !', 'Votre commande est entre nos mains :)');
             break;
         case 'missingArguments':
