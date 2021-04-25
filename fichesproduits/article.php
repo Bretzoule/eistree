@@ -46,7 +46,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/includes/navbar.php');
                                         <span class="fa fa-minus"></span>
                                     </button>
                                 </span>
-                                <input type="text" name="amount" class="form-control input-number w-25 number d-inline-block" value="1" readonly>
+                                <input type="text" name="amount" class="form-control input-number w-25 number d-inline-block" value="<?php echo ($data['stock'] > 0) ? 1 : 0; ?>" readonly>
                                 <span class="input-group-btn">
                                     <button type="button" id="plus" class="btn btn-default btn-number border" data-type="plus" onclick="incrementer(this)">
                                         <span class="fa fa-plus"></span>
@@ -55,7 +55,12 @@ include($_SERVER['DOCUMENT_ROOT'] . '/includes/navbar.php');
                                     </button>
                                 </span>
                             </div>
-                            <input class="boutonpanier" type="submit" value="Ajouter au panier">
+                            <?php
+                            if ($data['stock'] > 0) { ?>
+                                <input class="boutonpanier" type="submit" value="Ajouter au panier">
+                            <?php } else { ?>
+                                <div class='mt-3 alert alert-warning'>Cet article n'est plus disponible...</div>
+                            <?php } ?>
                         </div>
                     </form>
                 </div>
