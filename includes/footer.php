@@ -40,7 +40,7 @@
 </footer>
 <script>
     type = "text/javascript" >
-        $(".alert").delay(3500).slideUp(350, function() {
+        $("alert-dismissible").delay(3500).slideUp(350, function() {
             $(this).alert('close');
         });
 </script>
