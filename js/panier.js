@@ -26,13 +26,11 @@ function decrementer(element) {
     }
 }
 
-
 function removeElement(element) {
     elementToDelete = element.parentNode.parentNode;
     elementToDelete.parentNode.removeChild(elementToDelete);
     updateCart();
 }
-
 
 function updateCart() {
     let elementList = document.querySelectorAll(".price");
@@ -72,7 +70,7 @@ function sleep(ms) {
 
 
 function commander() {
-    var xhttp = new XMLHttpRequest();
+    let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         let myData;
         if (this.readyState == 4 && this.status == 200) {
@@ -90,7 +88,7 @@ function commander() {
             myHeader = document.getElementById("mainheader");
             myHeader.insertAdjacentElement('afterbegin', createBanner($alert, $pretext, $text));
             element = document.getElementsByClassName('table')[0].getElementsByTagName('tbody')[0];
-            if (element) element.remove();
+            if (element && myData[3] === "valid" ) element.remove();
             setTimeout(r => document.getElementsByClassName("alert-dismissible")[0].remove(), 3000);
             updateCart();
         }
