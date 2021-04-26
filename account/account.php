@@ -12,6 +12,7 @@ if (!isset($_SESSION['user'])) {
 <div id="page">
     <div id="centerPanel">
         <p id="mainTitle"><b>Mon compte</b></p>
+        <p class="petitTitreSection">Bonjour <?php echo $_SESSION['user']['prenom'];?></p>
     </div>
 </div>
 <?php
