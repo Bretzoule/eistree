@@ -11,7 +11,7 @@ Cette startup créée par des français fait de la qualité sa priorité.
 
 ## Mettre en place EISTREE
 
-- Extrayez l'archive (ou cloner la repo). 
+- Extrayez l'archive (ou clonez la repo). 
 
 - Démarrez un serveur PHP dans le dossier d'EISTREE.
 
