@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -15,7 +17,7 @@ session_start();
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/index.css">
     <?php
     if (in_array($active, array("contact", "register", "login"))) {
@@ -29,6 +31,6 @@ session_start();
 
 <body>
     <header id="mainheader">
-        <?php include($_SERVER['DOCUMENT_ROOT'] .'/includes/errorbanners.php');?>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/errorbanners.php'); ?>
         <a href="/index.php"><img id="logoTopDroit" src="/assets/textlogo.png" alt="fleur"></a>
     </header>

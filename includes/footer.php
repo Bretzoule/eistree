@@ -5,7 +5,7 @@
             <p>EISTree est une boutique spécialisée dans la vente en ligne de plantes, arbres et autres entitées
                 botaniques. Cette startup 100% Française privilégie la qualité en faisant affaire avec des
                 producteurs locaux.
-                Achetez un EISTree c'est acheter une plante issue de l'amour d'une équipe de developpeurs, de
+                Acheter un EISTree c'est acheter une plante issue de l'amour d'une équipe de développeurs, de
                 doux
                 commerciaux et d'adorables producteurs <span class="clear">❤️</span> !</p>
             <p class="footer-icons">
@@ -35,15 +35,17 @@
     <div class="copyright">
         <img alt="footerlogo" src="/assets/footerlogo.png">
         <br>
-        &copy; EISTree - Tout droits réservés.
+        &copy; EISTree - Tous droits réservés.
     </div>
 </footer>
 <script>
     type = "text/javascript" >
-        $(".alert").delay(3500).slideUp(350, function() {
+        $("alert-dismissible").delay(3500).slideUp(350, function() {
             $(this).alert('close');
         });
 </script>
+<!-- JS de Recherche -->
+<script src="/js/recherche..js"></script>
 </body>
 
 </html>

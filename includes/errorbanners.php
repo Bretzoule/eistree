@@ -15,8 +15,18 @@ if (isset($_SESSION['errorThrow'])) {
         case 'ajoutProduitSuccess':
             echo banner('alert-success', 'Au panier !', 'Produit ajouté avec succès');
             break;
+        case 'dataBaseError':
+            echo banner('alert-warning', 'Erreur !', 'Connexion à la BDD Impossible...');
+            session_destroy();
+            break;
         case 'erreurAjoutProduit':
             echo banner('alert-warning', 'Erreur !', 'Impossible d\'ajouter l\'article au panier...');
+            break;
+        case 'erreurCommande':
+            echo banner('alert-warning', 'Erreur !', 'Impossible de commander ces articles, merci de refaire votre panier.');
+            break;
+        case 'succesCommande':
+            echo banner('alert-success', 'Parfait !', 'Votre commande est entre nos mains :)');
             break;
         case 'missingArguments':
             echo banner('alert-warning', 'Eh !', 'Vous ne pouvez pas faire ça...');
@@ -58,5 +68,7 @@ if (isset($_SESSION['errorThrow'])) {
             echo banner('alert-danger', 'Erreur !', 'Erreur inconnue...');
             break;
     }
-    unset($_SESSION['errorThrow']);
+    if (isset($_SESSION['errorThrow'])) {
+        unset($_SESSION['errorThrow']);
+    };
 }
