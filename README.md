@@ -9,9 +9,25 @@ EISTree est un site de vente de plantes et de fleurs en tout genre.
 Cette startup créée par des français fait de la qualité sa priorité.
 
 
+## Mettre en place EISTREE
+
+- Extraire l'archive (ou cloner la repo). 
+
+- Démarrer un serveur PHP dans le dossier d'EISTREE.
+
+- Utilisez un utilisateur MySQL qui possède tous les droits et connectez vous avec. 
+-- Sourcez les fichiers mySQL "create_table.sql" puis "fill_table" dans l'ordre.
+
+Renseignez les informations de votre utilisateur ainsi que de l'adresse de votre base (localhost par défaut).
+
+Vous pouvez désormais aller sur EISTREE.
+
 ## Comment naviguer sur le site d'EISTree ?
 
-Il est indispensable de lancer le site avec un live server ou de créer un virtual host à l'aide d'Apache pour profiter de toutes les fonctionnalités du site
+Il est indispensable de lancer le site avec un live server ou de créer un virtual host à l'aide d'Apache pour profiter de toutes les fonctionnalités du site, voir la section précédente pour en savoir plus. 
+
+
+Vous pouvez également reach "eistree.eu" afin d'avoir une version de démonstration du site (toutes les fonctionnalités ne sont pas disponibles).
 
 
 ### Depuis quelles plateformes peut-on accéder au site ?
