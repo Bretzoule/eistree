@@ -31,3 +31,4 @@ if (isset($_SESSION['user'])) {
     $message = ['alert-warning', 'Oops !', 'Vous devez être connectés pour commander...','invalid'];
     echo json_encode($message);
 }
+?>
