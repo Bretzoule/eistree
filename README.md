@@ -11,11 +11,11 @@ Cette startup créée par des français fait de la qualité sa priorité.
 
 ## Mettre en place EISTREE
 
-- Extraire l'archive (ou cloner la repo). 
+- Extrayez l'archive (ou cloner la repo). 
 
-- Démarrer un serveur PHP dans le dossier d'EISTREE.
+- Démarrez un serveur PHP dans le dossier d'EISTREE.
 
-- Utilisez un utilisateur MySQL qui possède tous les droits et connectez vous avec. 
+- Utilisez un utilisateur MySQL qui possède tous les droits et connectez-vous avec. 
 -- Sourcez les fichiers mySQL "create_table.sql" puis "fill_table" dans l'ordre.
 
 Renseignez les informations de votre utilisateur ainsi que de l'adresse de votre base (localhost par défaut).
