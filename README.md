@@ -57,4 +57,11 @@ Il est aussi possible de créer un compte et de se connecter sur notre site pour
 Une page "Mon Compte" est aussi apparue et bien qu'elle soit vide pour l'instant, elle permet de se déconnecter de son compte d'utilisateur.
 
 
+## Nouvelles fonctionnalités liées à la bdd et à l'ajax
+
+Avant de passer commande, une fois dans le panier, vous pouvez modifier les quantités d'articles sans pour autant recharger la page. De plus si vous cliquez sur le bouton "Passer au paiement", le panier se vide et un pop-up indique que votre commande a été passée. Une fois la commande passée, les stocks de produits sont également mis à jour en conséquence.
+
+Enfin, une barre de recherche a également été implémentée et permet de trouver plus facilement les articles qui vous intéressent, bon shopping!
+
+
 
