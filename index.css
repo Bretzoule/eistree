@@ -178,6 +178,18 @@ ul>li {
     list-style: none;
 }
 
+/* #resultats{
+    position:fixed;
+    background: linear-gradient(#f1a9c9, #f184a5);;
+    border: 2px solid #b85985;
+    padding: 5px 0 5px;
+    width:183px;
+    visibility: hidden;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 20px;
+  } */
+
 /* Carousel 1ère page */
 
 /* merci miha sur Codepen https://codepen.io/mihacreanest/pen/QxKVZQ */
@@ -298,33 +310,37 @@ ul>li {
 /* Recherche */
 
 .searchbar {
-    float: right;
+    /* float: right; */
     cursor: text;
 }
 
-.slides {
-    width: 500%;
-    height: 100%;
-    display: flex;
-    margin-left: 100px;
+
+li.mydropdown-resultats {
+    display: inline-block;
 }
 
-.menu img {
-    width: 25px;
-    height: 25px;
+.mydropdown-resultats-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 2px 8px 16px 0px rgba(0, 0, 0, 0.322);
+    z-index: 3;
 }
 
-img.rounded-corners {
-    border-radius: 30px;
+.mydropdown-resultats-content a {
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 6px solid #f9f9f9;
 }
 
-#underlined {
-    text-decoration: underline;
+.mydropdown-resultats-content a:hover {
+    border-bottom: 6px solid #3a595a;
 }
 
-#photoFleur {
-    width: 20%;
-}
 
 /* #myFooter {
     clear: both;

@@ -14,16 +14,21 @@
         </li>
         <li><a class="<?php if (in_array($active, array('account', 'register', 'login'))) {
                             echo "active";
-                        } ?>" <?php if (isset($_SESSION['user'])) { echo 'href="/account/account.php"> Mon Compte'; } else { echo 'href="/login/login.php"> Se Connecter'; }?> </a></li>
+                        } ?>" <?php if (isset($_SESSION['user'])) {
+                                    echo 'href="/account/account.php"> Mon Compte';
+                                } else {
+                                    echo 'href="/login/login.php"> Se Connecter';
+                                } ?> </a></li>
         <li><a class="<?php if ($active === "contact") {
                             echo "active";
                         } ?>" href="/contact/contact.php">Contact</a></li>
-                        <?php if (isset($_SESSION['user'])) { echo '<li id="panier"><a href="/login/logout.php">Déconnexion</a></li>';}?>
+        <?php if (isset($_SESSION['user'])) {
+            echo '<li id="panier"><a href="/login/logout.php">Déconnexion</a></li>';
+        } ?>
         <li id="panier"><a href="/panier/panier.php">Panier</a></li>
-        <li class="formulaireee">
-            <form action="" method="get"><input class="searchbar" name="recherche" type="text" value="" onkeyup="" placeholder="(Recherche.....)" />
-                <div id="resultats"></div>
-            </form>
+        <li class="formulaireee mydropdown-resultats">
+            <input class="searchbar" name="recherche" type="text" value="" onclick="(this.value == '') ? showResult(this.value) : ''" onkeyup="showResult(this.value)" placeholder="(Recherche.....)" />
+            <div id="resultats" class="mydropdown-resultats-content"></div>
         </li>
     </ul>
 </nav>
