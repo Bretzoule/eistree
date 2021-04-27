@@ -44,6 +44,8 @@
             $(this).alert('close');
         });
 </script>
+<!-- JS de Recherche -->
+<script src="/js/recherche..js"></script>
 </body>
 
 </html>
